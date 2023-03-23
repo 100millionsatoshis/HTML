@@ -12,137 +12,150 @@
 </head>
 <body>
     <main>
-        <h1 class="mavzuNomi">
-            1-chi dars: <br> HTML bilan tanishuv
-        </h1>
+        <h1 class="mavzuNomi">1-chi dars: <br> HTML bilan tanishuv</h1>
         <hr>
-        <h2>
-            HTML nima o'zi?
-        </h2>
-        <p>
-            HTML internet tarmog'ining poydevori hisoblanadi. HTML siz uchun dasturchi bo'lishingizda biringchi qadam bo'lib xizmat qiladi. 
-            <br> 
-            HTML ingliz tilida HyperText Markup Language birinchi harflaridan yasalgan, yani akronim so'zdir. O'zbek tiliga taxminiy tarjimasi quyidagicha: oshuvchi matn belgili til. 
-            HTML so'zining kelib chiqishi va nima ma'noni anglatishiga xozircha chuqurlashmaymiz. 
-            <br>
-            HTMLni urganish juda oson. HTML elementlardan iborat. Elementlar teglar yordamida yoziladi.
-        </p>
+        <nav>
+            <h3>Mundarija:</h3>
+            <ul>
+                <li><a href="#htmlNima">HTML nima o'zi?</a></li>
+                <li><a href="#htmlFaylYaratish">HTML faylini yaratish</a></li>
+                <li><a href="#oddiyhtml">Oddiy HTML strukturasi</a></li>
+                <li><a href="#tarkibKiritish">HTML fayliga tarkib (kontent) kiritish</a></li>
+            </ul>
+        </nav>
         <hr>
-        <h2>
-            HTML faylini qanday yaratish mumkin? 
-        </h2>
-        <p>
-            HTML faylini yaratish uchun matn muharriri kerak bo'ladi. Agar siz Windows operatsion tizimidan foydalandsangiz, matn muharriri notepad deb nomlanadi. Agar sizning operatsion tizimingiz rus tilida bo'lsa bloknot deb nomlanadi. Agar siz Mac operatsiyon tizimidan foydalansangiz, matn muharriri TextEdit deb nomlanadi. Matn muharriri sifatida Sublime Text dan foydalanishingiz ham mumkin. Keyingi darslarda kod yozish uchun qulay bo'lgan boshqa dasturlar haqida gaplashamiz, lekin hozircha oddiy matn muharriridan foydalanamiz. <br>
-            Gapni cho'zmasdan birinchi vebsahifa yaratishni boshlaymiz. 
-        </p>
-        <ol>
-            <li>
-                Matn muharririni oching.
-            </li>
-            <li>
-                Muharrirga quyidagi matnni yozing:
+        <section id="htmlNima">
+            <h2>
+                HTML nima o'zi?
+            </h2>
+            <p>
+                HTML internet tarmog'ining poydevori hisoblanadi. HTML siz uchun dasturchi bo'lishingizda biringchi qadam bo'lib xizmat qiladi. 
+                <br> 
+                HTML ingliz tilida HyperText Markup Language birinchi harflaridan yasalgan, yani akronim so'zdir. O'zbek tiliga taxminiy tarjimasi quyidagicha: oshuvchi matn belgili til. 
+                HTML so'zining kelib chiqishi va nima ma'noni anglatishiga xozircha chuqurlashmaymiz. 
+                <br>
+                HTMLni urganish juda oson. HTML elementlardan iborat. Elementlar teglar yordamida yoziladi.
+            </p>
+        </section>
+        <hr>
+        <section id="htmlFaylYaratish">
+            <h2>HTML faylini qanday yaratish mumkin?</h2>
+            <p>
+                HTML faylini yaratish uchun matn muharriri kerak bo'ladi. Agar siz Windows operatsion tizimidan foydalandsangiz, matn muharriri notepad deb nomlanadi. Agar sizning operatsion tizimingiz rus tilida bo'lsa bloknot deb nomlanadi. Agar siz Mac operatsiyon tizimidan foydalansangiz, matn muharriri TextEdit deb nomlanadi. Matn muharriri sifatida Sublime Text dan foydalanishingiz ham mumkin. Keyingi darslarda kod yozish uchun qulay bo'lgan boshqa dasturlar haqida gaplashamiz, lekin hozircha oddiy matn muharriridan foydalanamiz. <br>
+                Gapni cho'zmasdan birinchi vebsahifa yaratishni boshlaymiz. 
+            </p>
+            <ol>
+                <li>
+                    Matn muharririni oching.
+                </li>
+                <li>
+                    Muharrirga quyidagi matnni yozing:
 <pre>
-    <code>
-        &lt;h1&gt; Mening birinchi vebsahifam &lt;/h1&gt;
-    </code>
+<code>
+    &lt;h1&gt; Mening birinchi vebsahifam &lt;/h1&gt;
+</code>
 </pre>
-            </li>
-            <li>
-                File tugmasini bosing, keyin Save as tugmasini bosing
-            </li>
-            <li>
-                Paydo bo'lgan oynada, faylni saqlash joyini ko'rsating va faylni index.html nomi bilan saqlang. 
-            </li>
-            <li>
-                Tabriklaymiz! Siz birinchi vebsahifangizni yasadingiz. Endi saqlagan joyingizdan index.html faylni oching sichqoncha chap tugmasini ikki marta bosish orqali oching. 
-            </li>
-        </ol>
-            
-        
-        
+                </li>
+                <li>
+                    File tugmasini bosing, keyin Save as tugmasini bosing
+                </li>
+                <li>
+                    Paydo bo'lgan oynada, faylni saqlash joyini ko'rsating va faylni index.html nomi bilan saqlang. 
+                </li>
+                <li>
+                    Tabriklaymiz! Siz birinchi vebsahifangizni yasadingiz. Endi saqlagan joyingizdan index.html faylni oching sichqoncha chap tugmasini ikki marta bosish orqali oching. 
+                </li>
+            </ol>
+        </section>
         <hr>
-        <h2>
-            Oddiy HTML strukturasi: 
-        </h2>
-        <p>
-            HTML fayli, veb sahifaning turli qismlarini aniqlovchi bir qator teglardan tashkil topadi. HTML faylining asosiy strukturasi quyidagicha: 
-        </p>
+        <section id="oddiyhtml">
+            <h2>
+                Oddiy HTML strukturasi: 
+            </h2>
+            <p>
+                HTML fayli, veb sahifaning turli qismlarini aniqlovchi bir qator teglardan tashkil topadi. HTML faylining asosiy strukturasi quyidagicha: 
+            </p>
 <pre>
-    <code>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-            &lt;head&gt;
-                &lt;title&gt;Sahifaning Sarlavhasi&lt;/title&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;!-- Sahifaning tarkibi shu yerga yoziladi --&gt;
-            &lt;/body&gt;
-        &lt;/html&gt;
-    </code>
-</pre>
-        <p>
-            &lt;!DOCTYPE html&&gt; tegi browserga ushbu fayl html ning oxirgi versiyasi bo'lgan html5 formatidagi fayl ekanligini xabar qiladi. <br>
-            &lt;html&gt; va &lt;/html&gt; birgalikda html elementi deb nomlanadi. 
-            html elementi eng birinchi element hisoblanadi va u ikkita tegdan iborat. Birinchisi ochuvchi teg &lt;html&gt;, ikkinchisi yopuvchi teg &lt;/html&gt; html teglari html kodining boshida va oxirida ishlatiladi va butun kodni o'z ichiga urab oladi. <br>
-            &lt;head&gt; teglari ichida vebsahifaga aloqador qo'shimcha ma'lumotlar kiriladi va ushbu ma'lumotlar foydalanuvchiga ko'rinmaydi. <br>
-            &lt;body&gt; elementi vebsahifaning barcha tarkibini (matn, gafiklar, rasmlar, havolallar va boshqalar) o'z ichiga oladi.  
-        </p>
-        <hr>
-        <h2>
-            HTML fayliga tarkib (kontent) kiritish:
-        </h2>
-        <p>
-            HTML fayliga tarkib kiritish uchun, bir qancha teglardan foydalanishingiz mumkin. Eng ko'p ishlatiladigan teglardan ba'zilari quyidagilar:
-        </p>
-        <ul>
-            <li>
-                &lt;h1&gt; dan tortib &lt;h6&gt; gacha bo'lgan teglar: Ushbu teglar sarlavhalar uchun ishlatiladi. &lt;h1&gt; tegi eng asosiy teg  hisoblanadi va u ko'runish jihatidan eng kattasi. &lt;h2&gt; dan &lt;h6&gt; gacha bo'lgan teglar quyi daraja sarlavhalar uchun ishlatiladi.
-            </li>
-            <li>
-                &lt;p&gt;: &lt;p&gt; tegi paragraflar uchun ishlatiladi.
-            </li>
-            <li>
-                &lt;ul&gt; va &lt;li&gt;: &lt;ul&gt; tegi raqamlanmagan ro'yxat uchun ishlatiladi, va &lt;li&gt; tegi esa ro'yxatning ichidagi har bir qatori uchun ishlatiladi.  
-            </li>
-            <li>
-                &lt;ol&gt; va &lt;li&gt;: &lt;ol&gt; tegi raqamlangan ro'yxat uchun qo'llaniladi va &lt;li&gt; tegi ro'yxatning har bir qatori ucun ishlatiladi.
-            </li>
-            <li>
-                &lt;a&gt;: &lt;a&gt; tegi havolalar uchun ishlatiladi.
-            </li>
-        </ul>
-        <p>
-            Quyida bir qancha elementlar qo'llanilgan html fayli misol qilib keltirilgan: 
-        </p>
-<pre>
-    <code>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
+<code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
         &lt;head&gt;
-            &lt;title&gt;Mening Vebsahifam&lt;/title&gt;
+            &lt;title&gt;Sahifaning Sarlavhasi&lt;/title&gt;
         &lt;/head&gt;
         &lt;body&gt;
-            &lt;h1&gt;Vebsahifamga xush kelibsiz!&lt;/h1&gt;
-            &lt;p&gt;
-                Bu mening birinchi vebsahifam, e'tiboringiz 
-                uchun raxmat.
-            &lt;/p&gt;
-            &lt;ul&gt;
-            &lt;li&gt;Boshiga&lt;/li&gt;
-            &lt;li&gt;Haqida&lt;/li&gt;
-            &lt;li&gt;Aloqa&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;p&gt;To'liq ma'lumot uchun 
-                &lt;a href="https://www.instagram.com/"&gt;Instagram&lt;/a&gt; 
-                sahifamga tashrif buyuring!
-            &lt;/p&gt;
+            &lt;!-- Sahifaning tarkibi shu yerga yoziladi --&gt;
         &lt;/body&gt;
-        &lt;/html&gt;
-    </code>
+    &lt;/html&gt;
+</code>
 </pre>
-        <p>
-            Yozgan kodingizni validator.w3.org web sahifasida tekshirishingiz mumkin. 
-        </p>
+            <p>
+                &lt;!DOCTYPE html&&gt; tegi browserga ushbu fayl html ning oxirgi versiyasi bo'lgan html5 formatidagi fayl ekanligini xabar qiladi. <br>
+                &lt;html&gt; va &lt;/html&gt; birgalikda html elementi deb nomlanadi. 
+                html elementi eng birinchi element hisoblanadi va u ikkita tegdan iborat. Birinchisi ochuvchi teg &lt;html&gt;, ikkinchisi yopuvchi teg &lt;/html&gt; html teglari html kodining boshida va oxirida ishlatiladi va butun kodni o'z ichiga urab oladi. <br>
+                &lt;head&gt; teglari ichida vebsahifaga aloqador qo'shimcha ma'lumotlar kiriladi va ushbu ma'lumotlar foydalanuvchiga ko'rinmaydi. <br>
+                &lt;body&gt; elementi vebsahifaning barcha tarkibini (matn, gafiklar, rasmlar, havolallar va boshqalar) o'z ichiga oladi.  
+            </p>
+    
+        </section>
+        <hr>
+        <section id="tarkibKiritish">
+            <h2>
+                HTML fayliga tarkib (kontent) kiritish:
+            </h2>
+            <p>
+                HTML fayliga tarkib kiritish uchun, bir qancha teglardan foydalanishingiz mumkin. Eng ko'p ishlatiladigan teglardan ba'zilari quyidagilar:
+            </p>
+            <ul>
+                <li>
+                    &lt;h1&gt; dan tortib &lt;h6&gt; gacha bo'lgan teglar: Ushbu teglar sarlavhalar uchun ishlatiladi. &lt;h1&gt; tegi eng asosiy teg  hisoblanadi va u ko'runish jihatidan eng kattasi. &lt;h2&gt; dan &lt;h6&gt; gacha bo'lgan teglar quyi daraja sarlavhalar uchun ishlatiladi.
+                </li>
+                <li>
+                    &lt;p&gt;: &lt;p&gt; tegi paragraflar uchun ishlatiladi.
+                </li>
+                <li>
+                    &lt;ul&gt; va &lt;li&gt;: &lt;ul&gt; tegi raqamlanmagan ro'yxat uchun ishlatiladi, va &lt;li&gt; tegi esa ro'yxatning ichidagi har bir qatori uchun ishlatiladi.  
+                </li>
+                <li>
+                    &lt;ol&gt; va &lt;li&gt;: &lt;ol&gt; tegi raqamlangan ro'yxat uchun qo'llaniladi va &lt;li&gt; tegi ro'yxatning har bir qatori ucun ishlatiladi.
+                </li>
+                <li>
+                    &lt;a&gt;: &lt;a&gt; tegi havolalar uchun ishlatiladi.
+                </li>
+            </ul>
+            <p>
+                Quyida bir qancha elementlar qo'llanilgan html fayli misol qilib keltirilgan: 
+            </p>
+<pre>
+<code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Mening Vebsahifam&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Vebsahifamga xush kelibsiz!&lt;/h1&gt;
+        &lt;p&gt;
+            Bu mening birinchi vebsahifam, e'tiboringiz 
+            uchun raxmat.
+        &lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Boshiga&lt;/li&gt;
+        &lt;li&gt;Haqida&lt;/li&gt;
+        &lt;li&gt;Aloqa&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;To'liq ma'lumot uchun 
+            &lt;a href="https://www.instagram.com/"&gt;Instagram&lt;/a&gt; 
+            sahifamga tashrif buyuring!
+        &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code>
+</pre>
+            <p>
+                Yozgan kodingizni validator.w3.org web sahifasida tekshirishingiz mumkin. 
+            </p>
+        </section>
+        <hr>
         <a href="/projectone/jadval.html">
             <button>
                 Dars jadvali
