@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kamoliddin Muminov">
-    <meta name="description" content="HTML kursining 6-chi darsida tasvirlar bilan ishlash tushuntirilgan. Jumladan; img tegi va src hossasi, alt hossasi, title hossasi, width va height hossalari figure va figcaption elementlari yordamida tasvirga nom yoki izoh berish">
-    <title>HTML da tasvirlar</title>
+    <meta name="description" content="HTML kursining 5-chi darsida havolalar haqida ma'lumot berilgan. Jumladan havolalarga mutlaq manzil (absolute reference), nisbiy manzil (relative reference) ichki manzil (internal reference) haqida malumot keltirilgan.">
+    <title>HTML da havolalar</title>
     <link rel="icon" href="/MarraUniversity/media/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/MarraUniversity/umumiyfason.css">
 </head>
 <body>
     <main>
         <h1 class="mavzuNomi">
-            6-chi dars: <br> Tasvirlar
+            5-chi dars: <br> Havolalar
         </h1>
         <hr>
         <nav>
@@ -22,92 +22,182 @@
             </h3>
             <ul>
                 <li>
-                    <a href="#imgTegi">&lt;img&gt; tegi va src hossasi</a> 
+                    <a href="#mutlaqManzil">Mutlaq manzil (Absolute reference)</a> 
                 </li>
                 <li>
-                    <a href="#altTitle">alt va title hossalari</a> 
+                    <a href="#nisbiyManzil">Nisbiy manzil (Relative reference)</a> 
                 </li>
                 <li>
-                    <a href="#widthHeight">width va height hossalari</a> 
-                </li>
-                <li>
-                    <a href="#figure">&lt;figure&gt; va &lt;figcaption&gt; teglari</a> 
+                    <a href="#ichkiManzil">Ichki manzil (Internal reference)</a> 
                 </li>
             </ul>
         </nav>
         <hr>
-        <section id="imgTegi">
+        <section id="mutlaqManzil">
             <h2>
-                &lt;img&gt; tegi va src hossasi
+                Mutlaq manzil (Absolute reference)
             </h2>
             <p>
-                Shu vaqtgacha biz faqat matn bilan ishladik. HTMLda media fayllardan ham foydalanish mumkin. Tasvirlar media fayllarning bir turi hisoblanadi.
-            </p>
-            <p>
-                Tasvirlar <strong>img</strong> elementi yordamida vebsahifaga joylashtiriladi. img elementi ingliz tilidagi image degan so'zning qisqartirilgan shaklidir. Image, imej deb o'qiladi va uning o'zbek tilida tarjimasi tasvir bo'ladi. <br>
-                img elementi faqat &lt;img&gt; tegi bilan yoziladi va yopuvchi tegga ega emas. Ba'zan yopuvchi tegga ega bo'lmagan elementlarni quyidagicha yozilganini ko'rishingiz mumkin. Masalan img elementi: &lt;img/&gt; Buni ko'rib xaytron bo'lmang, ikkalasi ham to'g'ri hisoblanadi. Lekin xozircha bunga chuqurlashib ketmaymiz. Shunchaki bunday teglarni ko'rganda xayron bo'lmang degan maqsadda ochiqlik kiritildi. <br>
-                Agar vebsahifangizda bitta emas bir nechta rasmlardan foydalanmoqchi bo'lsangiz, ularni alohida papkaga joylashingizni maslahat beramiz. Deylik papkani <em>tasvirlar</em> deb nomladingiz. Unda tasvirlarni vebsahifangizga quyidagicha joylashingiz mumkin: 
+                HTML qisqartmasining birinchi ikkita harfi ingliz tilida hyper text  (HT) o'zbek tilida oshuvchi matn ya'ni havolani anglatadi. Foydalanuvchini boshqa manzilga oshiradi, ya'ni o'tkazadi. Oddiy matndan farqli ularoq, havolali matn ustiga sichqoncha ko'rsatgichini keltirib chap tugmasini bosganimizda havola ishga tushadi. Havola ko'pincha sizni boshqa vebsahifaga olib boradi, yoki boshqa sahifani yangi oynada ochadi. Ushbu darsimizda havola yaratishni urganamiz. <br>
+                Havola &lt;a&gt; tegi yordamida yasaladi. Masalan siz vebsahifangizda ijtimoiy tarmoqdagi sahifalaringizga havola yasamoqchisiz. Bu quyidagicha yasaladi: 
             </p>
 <pre>
     <code>
-    &lt;p&gt;
-        Bizning eng so'nggi maxsulotimiz
-    &lt;/p&gt;
-    &lt;img src="tasvirlar/rasm.jpg"&gt;
+        &lt;p&gt;
+            Bu mening
+            &lt;a href="www.facebook.com/profilingizmoni"&gt;facebook&lt;/a&gt; 
+            dagi sahifam:
+        &lt;/p&gt;
     </code>
 </pre>
             <p>
-                yuqoridagi misolda ko'rib turganigizdek, img elementini tasvirlar papkangizdagi rasm.jpg fayli bilan bog'lash uchun <strong>src</strong> hossasidan foylanildi. src ingliz tilida source so'zining qisqargan shakli bo'lib o'zbek tilida manba degan ma'noni anglatadi. source so'zi <em>sours </em> deb o'qiladi. <br>
-                Tasvir fayli mahalliy bo'lanligi uchun yuqoridagi misolda nisbiy manzildan foydalanildi. 
+                Ushbu kodni browserda ochganimizda quyidagicha ko'rinishga ega bo'ladi:
             </p>
+            <img src="a.png" alt="HTML da ijtimoiy tarmoqqa tashqi havola yasash misol qilib keltirilgan browserdagi ko'rinishi">
+            <p>
+                Yuqoridagi misolda ko'rib turganingiz kabi havola rangi avtomatik tarzda siyoh rangga o'zgardi. Bunga sabab browser havolali matnni oddiy matndan ajralib turishini ta'minlaydi. <br>
+                Havola ustiga sichqoncha tugmasi bosilganda, browser havola rangini ko'k rangga o'zgartiradi. Bu ham, foydalanuchilarga qulaylik tug'dirish maqsadida, ya'ni tugma bosilgan havolalarni tugma bosilmagan havolalardan ajralib turishini belgilaydi.
+                Havola ranglarini istalgan rangga o'zgartirish mumkin, ammo buni kursimizning keyingi bosqichida, ya'ni css qismida urganamiz. <br>
+                Yuqorida kodda kiritilgan manzil to'liq manzil yoki mutlaq manzil deyiladi.
         </section>
         <hr>
-        <section id="altTitle">
+        <section id="nisbiyManzil">
             <h2>
-                alt va title hossalari
+                Nisbiy manzil (Relative reference)
             </h2>
             <p>
-                img elementining alt hossasiga matn biriktiriladi va ushbu matn tasvir biron-bir sababga ko'ra ko'rinmaganda, tasvir o'rnida ko'rinadi. alt hossasiga biriktiriladigan matn qo'shtirnoq ("") yoki yakkatirnoq ('') ichida yoziladi va tenglik (=) belgisi bilan biriktiriladi. Masalan: 
+                Agar havolaga qilib bog'lanadigan fayl, vebsahifamiz fayli bilan bir joyda joylashgan bo'lsa href hossasi quyidagicha yoziladi. 
             </p>
 <pre>
     <code>
-    &lt;p&gt;
-        Bu mening mushugim
-    &lt;/p&gt;
-    &lt;img src="tasvirlar/mushuk.jpg" alt="Mushuk rasmi"&gt;
+        &lt;p&gt;
+            Ramsni ko'rish uchun
+            &lt;a href="rasm.jpg"&gt;tugmani&lt;/a&gt; 
+            bosing
+        &lt;/p&gt;
     </code>
 </pre>
             <p>
-                alt hossasiga biriktirilgan matnning yana bir foydali tarafi bor. Ba'zida ko'rlar ekran o'quvchisidan foydalanishadi va vebsahifalarni eshitishadi. Shunday hollarda browser avtomatik tarzda tasvir o'rnida alt hossasiga biriktirilgan matnni o'qiydi. 
+                Bu nisbiy manzil deyiladi, ingliz tilida relative reference deyiladi, relativ referens deb o'qiladi. <br>
+                href hossasiga 
             </p>
             <p>
-                title hossasi ham alt hossasi kabi yoziladi va unga matn biriktiriladi. Biriktirilgan matn sichqoncha ko'rsatgichini rasm ustiga olib borganda ekranga suzib chiqadi. title hossasiga biriktilgan matnni ekran o'quvchisi o'qimaydi. title hossasi tasvir haqida qo'shimcha ma'lumot beradi va uni qo'llash ixtiyoriy hisoblanadi. 
+                Ikkita vebsahifangizni bir biriga havola orqali bog'lash uchun quyidagicha ko'rinishda kod yozishingiz kerak:
+            </p>
+<pre>
+    <code>
+        &lt;p&gt;
+            Bizga murojot qilishni barcha yo'llarini ko'rish uchun
+            &lt;a href="aloqa.html"&gt;aloq qismiga o'tish&lt;/a&gt; 
+            ni maslahat berlamiz.
+        &lt;/p&gt;
+    </code>
+</pre>
+            <p>
+                Agar aloqa.html fayli sizda hali mavjud bo'lmasa, unda index.html joylashgan papkada yangi fayl yarating va uni haqida.html deb nomlang. Siz endi haqida.html faylini mustaqil yarata olasiz va buning uchun shu kungacha urgangan bilimlaringizdan foydalaning. 
             </p>
         </section>
         <hr>
-        <section id="widthHeight">
+        <section id="ichkiManzil">
             <h2>
-                width va height hossalari.
+                Ichki manzil (Internal reference)
             </h2>
             <p>
-                img elementining width hossasi tasvirning enini, height hossasi esa bo'yini belgilaydi. Agar ushbu hossalar belgilanmasa, browser tasvirni asl o'lchamlarida ko'rsatadi. Agar ushbu hossalardan biri belgilansa, unda browser ikkinchisini avtomatik tarzda o'zgartiradi va bunda aspect ratio, ya'ni proporsiya saqlanib qoladi. 
+                Ichki manzil havolalari skrol turgmasini pastga tormasdan, vebsahifaing istalgan qismiga tez yetib borish uchun qo'llaniladi. Ichki manzil havolasini qo'llashdan oldin, ikkita html tegi bilan tanishib chiqamiz. <br>
+                Birinchisi bu &lt;nav&gt; elementi. nav ingliz tilida navigation degan so'zning qisqartmasidir. navigation navigeyshn deb o'qiladi va o'zbek tilida yo'l-yo'riq degan ma'noni anglatadi. <br>
+                &lt;nav&gt; va &lt;/nav&gt; teglari ichida asosan menyu tugmalari joylashtiriladi. <br>
+                Ikkinchi elementimiz bu &lt;section&gt; elementi. Section so'zi inglizcha bo'lib sekshn deb o'qiladi va o'zbek tilida ma'nosi bo'lim yoki bob. <br>
+                &lt;section&gt; tegi vebsahifangizni bo'limlarga bo'lish uchun ishlatiladi. 
+                Masalan:
             </p>
-        </section>
-        <hr>
-        <section id="figure">
-            <h2>
-                &lt;figure&gt; va &lt;figcaption&gt; teglari
-            </h2>
+<pre>
+    <code>
+        &lt;nav&gt;
+        &lt;/nav&gt;
+        &lt;section&gt; &lt;/section&gt;
+        &lt;section&gt; &lt;/section&gt;
+        &lt;section&gt; &lt;/section&gt;
+    </code>
+</pre>
             <p>
-                &lt;figure&gt; tegi img elementiga quti vazifasini bajaradi ya'ni ochuvchi va yopuvchi teglar bilan img elementini o'raydi. &lt;figcaption&gt; tegi esa img elementi bilan birga figure elementi ichida joylashadi. figcaption elementi tasvirga sarlavha yozish uchun ishlatiladi. 
+                Yuqoridagi kodda 1 ta nav elementi va 3 ta section elementi yasaldi. Endi nav elementi ichiga uchta banddan iborat raqamlanmagan ro'yxat tayyorlaymiz va section elementiga id hosssini qo'shamiz. id hossasi element boshqa ayni turdagi elementlardan ajralib turishi uchun ishlatiladi va elementga alohida belgi beradi. 
+                Masalan: 
+            </p>
+<pre>
+    <code>
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt; Men haqimda &lt;/li&gt;
+                &lt;li&gt; Qilgan ishlarim &lt;/li&gt;
+                &lt;li&gt; Men bilan bog'lanish &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;section id="menHaqimda"&gt; &lt;/section&gt;
+        &lt;section id="qilganIshlarim"&gt; &lt;/section&gt;
+        &lt;section id="boglanish"&gt; &lt;/section&gt;
+    </code>
+</pre>
+            <p>
+                Endigi bosqichda har bir section elementni ma'lumotlar bilan to'ldiramiz. Biz quyida misol tariqasida 2 qator matn qo'shamiz ammo siz ekraningiz to'lguncha matn kiriting, shunki ushandagina siz ichki manzil qanday ishlashini tushunib olasiz. <br>
+                So'ngra li elementlari ichidagi matnlarni a elementlari bilan o'raymiz. a elementning href hossasini section elementining id hossasi bilan bog'laymiz. Quyidagi misolga qarang. 
+            </p>
+<pre>
+    <code>
+        &lt;nav&gt;
+            &lt;ul&gt;
+            &lt;li&gt; 
+                &lt;a href="#menHaqimda"&gt;Men haqimda&lt;/a&gt;  
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="#menHaqimda"&gt;Qilgan ishlarim&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="#menHaqimda"&gt;Men bilan bog'lanish&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;section id="menHaqimda"&gt;
+            Ushbu qismga o'zingiz haqingizda ma'lumot kiriting. 
+            Yoki vebsahifangiz shirkat haqida bo'lsa shirkat 
+            haqida ma'lumot kiriting. 
+        &lt;/section&gt;
+        &lt;section id="qilganIshlarim"&gt;
+            Bu bi'limda erishgan yutuqlaringiz haqida ma'lumot 
+            kiriting, yoki boshqa istalgan malumot kiriting. 
+            Qanday ma'lumot kiritish siz yaratayotgan vebshifa 
+            turiga bog'liq. 
+        &lt;/section&gt;
+        &lt;section id="boglanish"&gt;
+            Bu bo'limda bog'lanish usullari ya'ni aloqaga
+            chiqish yo'llari haqida ma'lumot kiriting, 
+            masalan telefon raqami, email manzil va hokazolar. 
+        &lt;/section&gt;
+    </code>
+</pre>
+            <p>
+                Agar vebsahifa so'ngida vebsahifa boshiga olib boruvchi ichki manzilli havola yaratmoqchi bo'lsangiz, unda vebsahifa so'ngida yaratilgan a elementining href hossasiga # (hashtag) belgisini o'zini yozish kifoya.
+            </p>
+            <p>
+                Agar foydalanuvchi yuklab olishi kerak bo'lgan faylga havola sozlamoqchi bo'lsangiz, unda a elementining ichida download hossasini yozish kerak. 
+            </p>
+            <p>
+                Agar foydalanuvchi havolaga bosganda telefon qilish uchun qo'shimcha oyna ochilishini istasangiz, u quyidagicha yoziladi.  
+            </p>
+<pre>
+    <code>
+        &lt;p&gt; Qo'shimcha ma'lumot uchun bizga
+        &lt;a href="tel:+998123456789"&gt; qo'ng'iroq qiling  &lt;/a&gt;
+        &lt;/p&gt;
+    </code>
+</pre>
+            <p>
+                Agar havola yangi oynada ochilishi kerak bo'lsa unda &lt;a&gt; tegi ichida target hossasini _blank ko'rsatgichga belgilash kerak bo'ladi. 
             </p>
         </section>
 
-
-        </p>
-            <a href="beshinchisi.html">
+            <a href="tortinchisi.html">
                 <button>
-                    5-chi darsga qaytish
+                    4-chi darsga qaytish
                 </button>
             </a>
             <a href="/MarraUniversity/jadval.html">
@@ -115,9 +205,9 @@
                     Dars Jadvali
                 </button>
             </a>
-            <a href="yettinchisi.html">
+            <a href="oltinchisi.html">
                 <button>
-                    7-chi darsga o'tish
+                    6-chi darsga o'tish
                 </button>
             </a>
     </main>
