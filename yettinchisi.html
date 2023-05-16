@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kamoliddin Muminov">
-    <meta name="description" content="HTML da a tegi yordamida havolalar yaratish----------------------------------------------------------------------------------------------------------">
-    <title>HTML da semantik teglar</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <meta name="description" content="HTML kursining 6-chi darsida tasvirlar bilan ishlash tushuntirilgan. Jumladan; img tegi va src hossasi, alt hossasi, title hossasi, width va height hossalari figure va figcaption elementlari yordamida tasvirga nom yoki izoh berish">
+    <title>HTML da tasvirlar</title>
+    <link rel="icon" href="/MarraUniversity/media/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/MarraUniversity/umumiyfason.css">
+</head>
 <body>
     <main>
-        <h1>
-            7-chi dars: <br> Semantik teglar
+        <h1 class="mavzuNomi">
+            6-chi dars: <br> Tasvirlar
         </h1>
         <hr>
         <nav>
@@ -21,240 +22,92 @@
             </h3>
             <ul>
                 <li>
-                    <a href="#headerMainFooter">header, main va footer</a> 
+                    <a href="#imgTegi">&lt;img&gt; tegi va src hossasi</a> 
                 </li>
                 <li>
-                    <a href="#sarlavha">Sarlavha qoidalari</a> 
+                    <a href="#altTitle">alt va title hossalari</a> 
                 </li>
                 <li>
-                    <a href="#navhrdiv">nav, hr va div elementlari</a> 
+                    <a href="#widthHeight">width va height hossalari</a> 
                 </li>
                 <li>
-                    <a href="#code">code, aside, details</a> 
-                </li>
-                <li>
-                    <a href="#mark">mark va time elementlari</a> 
+                    <a href="#figure">&lt;figure&gt; va &lt;figcaption&gt; teglari</a> 
                 </li>
             </ul>
         </nav>
         <hr>
-        <section id="headerMainFooter">
+        <section id="imgTegi">
             <h2>
-                header, main va footer elementlari
+                &lt;img&gt; tegi va src hossasi
             </h2>
             <p>
-                html elementi ikki qismdan iborat; head va body <br>
-                head elementi ichida foydalanuvchilarga ko'rinmaydigan va sahifaga bog'liq ma'lumotlar kiritiladi.   
-                body elementi ichiga vebsahifaning asosit tarkibi kiritaladi. 
-                Quyida bunga misol keltirilgan. 
-            </p>
-<pre>
-    <code>
-        &lt;html&gt;
-            &lt;head&gt;
-                &lt;!-- Bu HTML ning head qismi, ya'ni miyyasi--&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;!--Bu HTML ning body qismi, ya'ni tanasi--&gt;
-            &lt;/body&gt;
-        &lt;/html&gt;
-    </code>
-</pre>
-            <p>
-                html ning body qismini 3 qismga quyidagicha bo'lish mumkin:  
-            </p>
-<pre>
-    <code>
-        &lt;html&gt;
-            &lt;head&gt;
-                &lt;!-- Bu HTML ning head qismi, ya'ni miyyasi--&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;header&gt;
-                    &lt;!--Bu body elementining sarlavha qismi--&gt;
-                &lt;/header&gt;
-                &lt;main&gt;
-                    &lt;!--Bu body elementining asosiy qismi--&gt;
-                &lt;/main&gt;
-                &lt;footer&gt;
-                    &lt;!--Bu body elementining oyoq qismi--&gt;
-                &lt;/footer&gt;
-            &lt;/body&gt;
-        &lt;/html&gt;
-    </code>
-</pre>
-            <p>
-                <aside>&lt;head&gt; tegini &lt;header&gt; tegi bilan adashtirib yubormang, ular boshqa-boshqa teglar.</aside>
-                Yuqorida kodda ko'rib turganingizdek, body elementi 3 ta qismga bo'lindi. <br> Birinchisi <strong>header</strong> elementi, sarlavha qismi hisoblanadi va o'z ichiga menyudan tashkil topgan nav elementini, h1 elementini, tamg'a belgisini (logo) va boshqalarni oladi. <br>
-                Ikkinchisi <strong>main</strong> elementi. main so'zi ingliz tilidan olingan, meyn deb o'qiladi va o'zbek tilida asosiy degan ma'noni anglatadi. main elementi vebsahifaning eng muhim va asosiy tarkibini o'z ichiga oladi. main elementini section, div va/yoki article elementlari bilan qismlarga bo'lish mumkin. <br>
-                Uchinchisi <strong>footer</strong> elementidir. Bu element o'z ichiga mualliflik huquqi haqida ma'lumot, foydalanilgan manbalar va boshqa ma'lumotlarni oladi. <br> footer elementining vebsahifaning eng pastki qismida joylashadi.   
-            </p>
-
-
-        </section>
-        <hr>
-        <section id="sarlavha">
-            <h2>
-                Sarlavha qoidalari va pog'onalari.
-            </h2>
-            <p>
-                Vebsahifa tarkibi tartibli bo'lishi kerak. HTML da vebsahifa tarkibini tartibga solish uchun semantik teglardan foydalaniladi. Oldingi darslarda semantik teglardan allaqachon foydalandik. Masalan &lt;h1&gt; tegi, vebsahifa sarlavhasi uchun ishlatiladi. Vebsahifaning har bir sahifasida faqat bir marta &lt;h1&gt; tegi ishlatish qat'iy maslahat beriladi. Ko'pincha u sahifa boshida, eng yuqorida, sarlavha ko'rinishida keladi. <br>
-                Agar sahifada birdan ortiq sarlavha bo'lsa, qolgan sarlavhalarni &lt;h2&gt; tegi bilan yozishingiz mumkin. &lt;h2&gt; tegini sahifada ko'p marta ishlatish mumkin. &lt;h2&gt; tegi &lt;h1&gt; tegidan keyingi, pastgi pog'onada turadi. <br>
-                Agar &lt;h2&gt; tegin pastki pog'onada yana boshqa sarlavhalar bo'lsa unda &lt;h3&gt; tegidan foydalaning. Quyidagi misolga diqqat bilan etibor bering: 
-            </p>
-          
-<pre>
-    <code>
-    &lt;h1&gt;
-        Oshxona Menyusi haqida
-    &lt;/h1&gt;
-    &lt;h2&gt;
-        Yeguliklar
-    &lt;/h2&gt;
-        &lt;h3&gt;Salatlar&lt;/h3&gt;
-            &lt;p&gt;Organiz sabzavotlardan tayyorlangan&lt;/p&gt;
-        &lt;h3&gt;Suyuq ovqatlar&lt;/h3&gt;
-            &lt;p&gt;Sho'rva va boshqa suyuq ovqatlar&lt;/p&gt;
-        &lt;h3&gt;Quyuq ovqatlar&lt;/h3&gt;
-            &lt;p&gt;Palov, qozon kabob va boshqalar&lt;/p&gt;
-    &lt;h2&gt;
-        Ichimliklar
-    &lt;/h2&gt;
-        &lt;h3&gt;Spirtli ichimliklar&lt;/h3&gt;
-            &lt;p&gt;Aroq, vino, pivo va turli xildagi kokteyl ichimliklari&lt;/p&gt;
-        &lt;h3&gt;Spirtsiz ichimliklar&lt;/h3&gt;
-            &lt;p&gt;Choy, qaxva mevali ichimliklar&lt;/p&gt;
-    &lt;h2&gt;
-        Chekiladiganlar
-    &lt;/h2&gt;
-        &lt;p&gt;Turli xildagi tamaki maxsulotlari va elektron sigaretlar&lt;/p&gt;
-    </code>
-</pre>
-            <p>
-                Yuqoridagi misolda o'zingiz ko'rib turganingizdek, eng muhum sarlavha h1 elementi bilan, muhimlik darajasi bo'yicha keyingi pog'onada turuvchi sarlavhalar h2 va h3 elementlari bilan yozildi. <br> 
-                &lt;h4&gt;, &lt;h5&gt; va &lt;h6&gt; elementlari kamdan-kam ishlatiladi. 
-            </p>
-        </section>
-        <hr>
-        <section id="navhrdiv">
-            <h2>
-                nav va hr elementlari
-            </h2>
-            <p>
-                &lt;nav&gt; tegini ham oldingi darslarda qo'lladik. &lt;nav&gt; tegi ham semantik teglar qatorida turadi, ya'ni vebsahifani mazmuniga qarab tartiblash uchun yordam beradi. &lt;nav&gt; tegi havolalarni bir guruhga o'rash uchun ishlatiladi. Masalan, vebsahifa boshida, eng yuqori qismida, yoki chap tomonda joylashgan menyuni nav elementi ichiga joylash mumkin. &lt;nav&gt; tegi ingliz tilida navigation so'zidan olingan, va o'zbek tilida yo'l-yo'riq degan ma'noni anglatadi. Bir vebsahifada bir nechta &lt;nav&gt; tegi qo'llash mumkin. 
+                Shu vaqtgacha biz faqat matn bilan ishladik. HTMLda media fayllardan ham foydalanish mumkin. Tasvirlar media fayllarning bir turi hisoblanadi.
             </p>
             <p>
-                &lt;hr&gt; elementi, vebsahifa tarkibini qismlarga bo'lish uchun ishlatiladi. browser &lt;hr&gt; elementini gorozontal chiziq ko'rinishida ko'rsatadi. Ushbu element ham semantik elementlar safiga kiradi, chunki u vebsahifa tarkibida mavzu o'zgarishini anglatadi. 
-            </p>
-            <p>
-                &lt;div&gt; tegi ham &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; teglari kabi, vebsahifa tarkibini qismlarga ajratish uchun ishlatiladi. &lt;div&gt; tegi hech qanday semantik ma'noga ega emas, u shunchaki vebsahifa tarkibini tartibga solishda quti vazifasini bajaradi. &lt;div&gt; tegini body elementining istalgan qismida ishlatish mumkin. &lt;span&gt; ham divga o'xshab matnni bir qismini o'rash uchun ishlatiladi. Ammo span elementining div elementidan farqi span qator ichi elementi, div esa blok element hisoblanadi. blok elementlar hajmidan qat'iy nazar butun qatorni egallaydi. 
-            </p>
-           
-        </section>
-        <hr>
-        <section id="code">
-            <h2>
-                code, aside, details
-            </h2>
-            <p>
-                Agar vebsahifangizda kompyuter kodi joylashtirmoqchi bo'lsangiz, &lt;code&gt; tegidan foydalaning. &lt;code&gt; teglari bilan o'ralgan matn boshqa matndan ajralib turadi, chunki &lt;code&gt; tegiga <em>monospace</em> turidagi shrift oldindan biriktirilgan. 
-            </p>
-            <p>
-                &lt;aside&gt; tegi ichida joylashadigan ma'lumot vebsahifada keltirilgan mavzuga bog'liq ammo mavzular ket-ketligiga to'g'ri kelmaydi va shu sabab qo'shimcha ma'lumot hisoblanadi. &lt;aside&gt; tegi bilan o'ralgan matn vebsahifaning umumiy matnidan farq qilmaydi. Matnni &lt;aside&gt; tegiga o'rashdan maqsad google va shunga o'xshash boshqa qidiriv xizmatlari vebsahifangizni yaxshi tushunib olishi. 
-            </p>
-            <p>
-                &lt;details&gt; tegi agar bir ma'lumot tafsilotlarini yozish uchun ishlatiladi. U &lt;summary&gt; tegi bilan birga quyidagicha yoziladi:
-            </p>
-<pre>
-    <code>
-    &lt;details&gt;
-        &lt;summary&gt;
-            Tizzausti kompyuterining hususiyatlari
-        &lt;/summary&gt;
-        &lt;p&gt;
-            Ekran diagonali 14 dyum, 
-            operativ xotirasi 16Gb, 
-            SSD xotirasi 512Gb, 
-            protsessor o'zaklar soni - 8,
-            protsessor tezligi - 2.3 megagerts, 
-            batareya hajmi 8000 mA. 
-        &lt;/p&gt;
-    &lt;/details&gt;
-    </code>
-</pre>
-            <p>
-                Yuqoridagi kodning paragraf qismi browserda ko'rinmaydi, summary elementining chap tomonida tugmacha hosil bo'ladi va ushbu tugmacha bosilgandagina, paragraf elementi foydlanuvchiga ko'rinadi. 
-            </p>
-            <figure>
-                <img src="detailsyopiq.png" alt="details elementi ichiga joylashgan summary elementi brauzer ko'rinishi">
-                <figcaption>
-                    details elementini brauzerda yopiq holda ko'rinishi. 
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="detailsochiq.png" alt="details elementi ichiga joylashgan summary elementi va p elementi brauzer ko'rinishi">
-                <figcaption>
-                    details elementining ochilgandagi holati ko'rinishi. 
-                </figcaption>
-            </figure>
-
-
-        </section>
-        <hr>
-        <section id="mark">
-            <h2>
-                HTMLda mark va time elementlari
-            </h2>
-            <p>
-                &lt;mark&gt; tegi matnni bir qismini yoritish uchun qo'llaniladi. Quyida keltirilgan misolga qarang: 
+                Tasvirlar <strong>img</strong> elementi yordamida vebsahifaga joylashtiriladi. img elementi ingliz tilidagi image degan so'zning qisqartirilgan shaklidir. Image, imej deb o'qiladi va uning o'zbek tilida tarjimasi tasvir bo'ladi. <br>
+                img elementi faqat &lt;img&gt; tegi bilan yoziladi va yopuvchi tegga ega emas. Ba'zan yopuvchi tegga ega bo'lmagan elementlarni quyidagicha yozilganini ko'rishingiz mumkin. Masalan img elementi: &lt;img/&gt; Buni ko'rib xaytron bo'lmang, ikkalasi ham to'g'ri hisoblanadi. Lekin xozircha bunga chuqurlashib ketmaymiz. Shunchaki bunday teglarni ko'rganda xayron bo'lmang degan maqsadda ochiqlik kiritildi. <br>
+                Agar vebsahifangizda bitta emas bir nechta rasmlardan foydalanmoqchi bo'lsangiz, ularni alohida papkaga joylashingizni maslahat beramiz. Deylik papkani <em>tasvirlar</em> deb nomladingiz. Unda tasvirlarni vebsahifangizga quyidagicha joylashingiz mumkin: 
             </p>
 <pre>
     <code>
     &lt;p&gt;
-        O'zbekistonda transport vositalari yo'lning 
-        &lt;mark&gt; o'ng tarafidan &lt;/mark&gt; 
-        harakatlanadi. 
+        Bizning eng so'nggi maxsulotimiz
     &lt;/p&gt;
+    &lt;img src="tasvirlar/rasm.jpg"&gt;
     </code>
 </pre>
-            <figure>
-                <img src="mark.png" alt="details elementi ichiga joylashgan summary elementi va p elementi brauzer ko'rinishi">
-                <figcaption>
-                    mark elementi matnni bir qismini yoritadi. Oldindan belgilangan rang - sariq 
-                </figcaption>
-            </figure>
             <p>
-                html kodida vaqtni yozganda uni &lt;time&gt; va &lt;/time&gt; teglari orasiga o'rash maslahat beriladi. Bu browserda ko'rinish jihatidan hech qanday o'zgarish hosil qilmaydi lekin ko'makchi texnologiyalar, masalan ekran o'quvchilari uchun juda foydali hisoblanadi. Vaqtni umumiy matndan &lt;time&gt; tegi bilan ajratish, ya'ni o'rab olish qidiruvchilarga qulaylik yaratadi. 
+                yuqoridagi misolda ko'rib turganigizdek, img elementini tasvirlar papkangizdagi rasm.jpg fayli bilan bog'lash uchun <strong>src</strong> hossasidan foylanildi. src ingliz tilida source so'zining qisqargan shakli bo'lib o'zbek tilida manba degan ma'noni anglatadi. source so'zi <em>sours </em> deb o'qiladi. <br>
+                Tasvir fayli mahalliy bo'lanligi uchun yuqoridagi misolda nisbiy manzildan foydalanildi. 
+            </p>
+        </section>
+        <hr>
+        <section id="altTitle">
+            <h2>
+                alt va title hossalari
+            </h2>
+            <p>
+                img elementining alt hossasiga matn biriktiriladi va ushbu matn tasvir biron-bir sababga ko'ra ko'rinmaganda, tasvir o'rnida ko'rinadi. alt hossasiga biriktiriladigan matn qo'shtirnoq ("") yoki yakkatirnoq ('') ichida yoziladi va tenglik (=) belgisi bilan biriktiriladi. Masalan: 
             </p>
 <pre>
     <code>
     &lt;p&gt;
-        Ish vaqti ertalab &lt;time&gt; 8:30 &lt;/time&gt; dan kechki 
-        &lt;time&gt; 5:30 &lt;/time&gt; gacha
-    &lt;/p&gt; 
+        Bu mening mushugim
+    &lt;/p&gt;
+    &lt;img src="tasvirlar/mushuk.jpg" alt="Mushuk rasmi"&gt;
     </code>
 </pre>
             <p>
-                time elementi datetime hossasiga ega. Quyidagi misolga qarang: 
+                alt hossasiga biriktirilgan matnning yana bir foydali tarafi bor. Ba'zida ko'rlar ekran o'quvchisidan foydalanishadi va vebsahifalarni eshitishadi. Shunday hollarda browser avtomatik tarzda tasvir o'rnida alt hossasiga biriktirilgan matnni o'qiydi. 
             </p>
-<pre>
-    <code>
-    &lt;p&gt;
-        Buyurtmalaringiz &lt;time datetime="2023-12-31"&gt; shu yil oxirigacha
-        &lt;/time&gt; yetkazib beriladi.  
-    &lt;/p&gt; 
-    </code>
-</pre>
-
-
-
+            <p>
+                title hossasi ham alt hossasi kabi yoziladi va unga matn biriktiriladi. Biriktirilgan matn sichqoncha ko'rsatgichini rasm ustiga olib borganda ekranga suzib chiqadi. title hossasiga biriktilgan matnni ekran o'quvchisi o'qimaydi. title hossasi tasvir haqida qo'shimcha ma'lumot beradi va uni qo'llash ixtiyoriy hisoblanadi. 
+            </p>
+        </section>
+        <hr>
+        <section id="widthHeight">
+            <h2>
+                width va height hossalari.
+            </h2>
+            <p>
+                img elementining width hossasi tasvirning enini, height hossasi esa bo'yini belgilaydi. Agar ushbu hossalar belgilanmasa, browser tasvirni asl o'lchamlarida ko'rsatadi. Agar ushbu hossalardan biri belgilansa, unda browser ikkinchisini avtomatik tarzda o'zgartiradi va bunda aspect ratio, ya'ni proporsiya saqlanib qoladi. 
+            </p>
+        </section>
+        <hr>
+        <section id="figure">
+            <h2>
+                &lt;figure&gt; va &lt;figcaption&gt; teglari
+            </h2>
+            <p>
+                &lt;figure&gt; tegi img elementiga quti vazifasini bajaradi ya'ni ochuvchi va yopuvchi teglar bilan img elementini o'raydi. &lt;figcaption&gt; tegi esa img elementi bilan birga figure elementi ichida joylashadi. figcaption elementi tasvirga sarlavha yozish uchun ishlatiladi. 
+            </p>
         </section>
 
 
         </p>
-            <a href="oltinchisi.html">
+            <a href="beshinchisi.html">
                 <button>
-                    6-chi darsga qaytish
+                    5-chi darsga qaytish
                 </button>
             </a>
             <a href="/MarraUniversity/jadval.html">
@@ -262,9 +115,9 @@
                     Dars Jadvali
                 </button>
             </a>
-            <a href="sakkizinchisi.html">
+            <a href="yettinchisi.html">
                 <button>
-                    8-chi darsga o'tish
+                    7-chi darsga o'tish
                 </button>
             </a>
     </main>
