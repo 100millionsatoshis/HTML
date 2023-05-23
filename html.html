@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kamoliddin Muminov" />
+    <meta
+      name="description"
+      content="HTML da form elementi yordamida shalkllar yasash, input elementi yordamida bir qatorli matn kiritish katagi yasash, input elementining type hossasiga radio ko'rsatgichini belgilab radio tugmalar yasash, input elementining type hossasiga checkbox yozib belgilash kataklari yasash va type hossasiga button ko'rsatgichini belgilab topshirish tugmasini yasash"
+    />
+    <title>HTML da shakllar va kiritishlar</title>
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/MarraUniversity/umumiyfason.css" />
+  </head>
+  <body>
+    <main>
+      <section id="birinchisi">
+        <h1 class="mavzuNomi">
+          1-chi dars: <br />
+          HTML bilan tanishuv
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li><a href="#htmlNima">HTML nima o'zi?</a></li>
+            <li><a href="#htmlFaylYaratish">HTML faylini yaratish</a></li>
+            <li><a href="#oddiyhtml">Oddiy HTML strukturasi</a></li>
+            <li>
+              <a href="#tarkibKiritish"
+                >HTML fayliga tarkib (kontent) kiritish</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="htmlNima">
+          <h2>HTML nima o'zi?</h2>
+          <p>
+            HTML internet tarmog'ining poydevori hisoblanadi. HTML siz uchun
+            dasturchi bo'lishingizda biringchi qadam bo'lib xizmat qiladi.
+            <br />
+            HTML ingliz tilida HyperText Markup Language birinchi harflaridan
+            yasalgan, yani akronim so'zdir. O'zbek tiliga taxminiy tarjimasi
+            quyidagicha: oshuvchi matn belgili til. HTML so'zining kelib
+            chiqishi va nima ma'noni anglatishiga xozircha chuqurlashmaymiz.
+            <br />
+            HTMLni urganish juda oson. HTML elementlardan iborat. Elementlar
+            teglar yordamida yoziladi.
+          </p>
+        </article>
+        <hr />
+        <article id="htmlFaylYaratish">
+          <h2>HTML faylini qanday yaratish mumkin?</h2>
+          <p>
+            HTML faylini yaratish uchun matn muharriri kerak bo'ladi. Agar siz
+            Windows operatsion tizimidan foydalandsangiz, matn muharriri notepad
+            deb nomlanadi. Agar sizning operatsion tizimingiz rus tilida bo'lsa
+            bloknot deb nomlanadi. Agar siz Mac operatsiyon tizimidan
+            foydalansangiz, matn muharriri TextEdit deb nomlanadi. Matn
+            muharriri sifatida Sublime Text dan foydalanishingiz ham mumkin.
+            Keyingi darslarda kod yozish uchun qulay bo'lgan boshqa dasturlar
+            haqida gaplashamiz, lekin hozircha oddiy matn muharriridan
+            foydalanamiz. <br />
+            Gapni cho'zmasdan birinchi vebsahifa yaratishni boshlaymiz.
+          </p>
+          <ol>
+            <li>Matn muharririni oching.</li>
+            <li>
+              Muharrirga quyidagi matnni yozing:
+              <pre>
+    <code>
+        &lt;h1&gt; Mening birinchi vebsahifam &lt;/h1&gt;
+    </code>
+    </pre>
+            </li>
+            <li>File tugmasini bosing, keyin Save as tugmasini bosing</li>
+            <li>
+              Paydo bo'lgan oynada, faylni saqlash joyini ko'rsating va faylni
+              index.html nomi bilan saqlang.
+            </li>
+            <li>
+              Tabriklaymiz! Siz birinchi vebsahifangizni yasadingiz. Endi
+              saqlagan joyingizdan index.html faylni oching sichqoncha chap
+              tugmasini ikki marta bosish orqali oching.
+            </li>
+          </ol>
+        </article>
+        <hr />
+        <article id="oddiyhtml">
+          <h2>Oddiy HTML strukturasi:</h2>
+          <p>
+            HTML fayli, veb sahifaning turli qismlarini aniqlovchi bir qator
+            teglardan tashkil topadi. HTML faylining asosiy strukturasi
+            quyidagicha:
+          </p>
+          <pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Sahifaning Sarlavhasi&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!-- Sahifaning tarkibi shu yerga yoziladi --&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+    </pre>
+          <p>
+            &lt;!DOCTYPE html&&gt; tegi browserga ushbu fayl html ning oxirgi
+            versiyasi bo'lgan html5 formatidagi fayl ekanligini xabar qiladi.
+            <br />
+            &lt;html&gt; va &lt;/html&gt; birgalikda html elementi deb
+            nomlanadi. html elementi eng birinchi element hisoblanadi va u
+            ikkita tegdan iborat. Birinchisi ochuvchi teg &lt;html&gt;,
+            ikkinchisi yopuvchi teg &lt;/html&gt; html teglari html kodining
+            boshida va oxirida ishlatiladi va butun kodni o'z ichiga urab oladi.
+            <br />
+            &lt;head&gt; teglari ichida vebsahifaga aloqador qo'shimcha
+            ma'lumotlar kiriladi va ushbu ma'lumotlar foydalanuvchiga
+            ko'rinmaydi. <br />
+            &lt;body&gt; elementi vebsahifaning barcha tarkibini (matn,
+            gafiklar, rasmlar, havolallar va boshqalar) o'z ichiga oladi.
+          </p>
+        </article>
+        <hr />
+        <article id="tarkibKiritish">
+          <h2>HTML fayliga tarkib (kontent) kiritish:</h2>
+          <p>
+            HTML fayliga tarkib kiritish uchun, bir qancha teglardan
+            foydalanishingiz mumkin. Eng ko'p ishlatiladigan teglardan ba'zilari
+            quyidagilar:
+          </p>
+          <ul>
+            <li>
+              &lt;h1&gt; dan tortib &lt;h6&gt; gacha bo'lgan teglar: Ushbu
+              teglar sarlavhalar uchun ishlatiladi. &lt;h1&gt; tegi eng asosiy
+              teg hisoblanadi va u ko'runish jihatidan eng kattasi. &lt;h2&gt;
+              dan &lt;h6&gt; gacha bo'lgan teglar quyi daraja sarlavhalar uchun
+              ishlatiladi.
+            </li>
+            <li>&lt;p&gt;: &lt;p&gt; tegi paragraflar uchun ishlatiladi.</li>
+            <li>
+              &lt;ul&gt; va &lt;li&gt;: &lt;ul&gt; tegi raqamlanmagan ro'yxat
+              uchun ishlatiladi, va &lt;li&gt; tegi esa ro'yxatning ichidagi har
+              bir qatori uchun ishlatiladi.
+            </li>
+            <li>
+              &lt;ol&gt; va &lt;li&gt;: &lt;ol&gt; tegi raqamlangan ro'yxat
+              uchun qo'llaniladi va &lt;li&gt; tegi ro'yxatning har bir qatori
+              ucun ishlatiladi.
+            </li>
+            <li>&lt;a&gt;: &lt;a&gt; tegi havolalar uchun ishlatiladi.</li>
+          </ul>
+          <p>
+            Quyida bir qancha elementlar qo'llanilgan html fayli misol qilib
+            keltirilgan:
+          </p>
+          <pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Mening Vebsahifam&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Vebsahifamga xush kelibsiz!&lt;/h1&gt;
+            &lt;p&gt;
+                Bu mening birinchi vebsahifam, e'tiboringiz 
+                uchun raxmat.
+            &lt;/p&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Boshiga&lt;/li&gt;
+            &lt;li&gt;Haqida&lt;/li&gt;
+            &lt;li&gt;Aloqa&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;p&gt;To'liq ma'lumot uchun 
+                &lt;a href="https://www.instagram.com/"&gt;Instagram&lt;/a&gt; 
+                sahifamga tashrif buyuring!
+            &lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+    </pre>
+          <p>
+            Yozgan kodingizni validator.w3.org web sahifasida tekshirishingiz
+            mumkin.
+          </p>
+        </article>
+        <hr />
+      </section>
+      <section id="ikkinchisi">
+        <h1 class="mavzuNomi">
+          2-chi dars: <br />
+          HTML &lt;head&gt; elementi
+        </h1>
+        <p>
+          HTMLda head elementi HTMLning miyasi hisoblanadi; u foydalanuvchiga
+          ko'rinmaydi lekin unda juda muhim ma'lumotlar saqlanadi.
+          <i> head </i> so'zi ingliz tilidan olingan va o'zbek tilida
+          <i>bosh</i> degan ma'noni anglatadi.
+        </p>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#charset">charset hossasi (atributi)</a>
+            </li>
+            <li>
+              <a href="#muallif">Muallif va tavsif</a>
+            </li>
+            <li>
+              <a href="#nishon">Nishon joylashtirish</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="charset">
+          <h2>charset atributi</h2>
+          <p>
+            Meta ma'lumotlar: Meta ma'lumotlar &lt;meta&gt; tegi yordamida
+            yoziladi. &lt;meta&gt; tegi bir qancha atributlarni o'z ichiga
+            oladi. Masalan: <br />
+            charset atributi. Specify the character encoding for the HTML
+            document: charset atributi html dokumentini kompyuter tiliga qanday
+            qilib ugirishni belgilaydi. HTML5 yuriqnomasi veb dasturchilarni
+            UTF-8 ugirish tizimidan foydalanishlarini maslaxat beradi, chunki,
+            UTF-8 danyodagi qariyb barcha harflar va belgilarni qamrab oladi.
+            meta tegi ko'pchilik html teglaridan farqli ularoq yopuvchi tegga
+            ega emas. Quyida keltirilgan misolga qarang:
+          </p>
+          <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        Bu html ning body, ya'ni tana qismi. 
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        </article>
+        <hr />
+        <article id="muallif">
+          <h2>Muallif va tavsif</h2>
+          <p>
+            veb sahifa muallifi haqida ma'lumot kiritish uchun author va content
+            atributlaridan foydalaniladi. Quyidagi misolga e'tibor bering:
+          </p>
+          <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="author" content="Alisher Navoiy"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        Bu html ning body, ya'ni tana qismi. 
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+          <p>
+            vebsahifaga tavsif berish uchun, ya'ni vebsahifa nima haqida
+            ekanligi haqida to'liqroq ma'lumot berish uchun name atributi
+            description ko'rsatgichi bilan va content atributi ko'rsatgichi
+            urnida vebsahifaga tavsif beriladi. Takror eslatib o'tamiz, ushbu
+            tavsif vebsahifa foydalanuvchilariga ko'rinmaydi va u faqat
+            qidiruvchi matorlar uchun kerak bo'ladi. Quyida bunga misol
+            keltiramiz:
+          </p>
+          <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="author" content="Alisher Navoiy"&gt;
+                        &lt;meta name="description" content="Ushbu vebsahifada
+                        dukonimizda soliladigan gullar turlari, ularning 
+                        narxlari va etkazib berish xizmatlari haqida ma'lumot
+                        keltirilgan"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        Bu html ning body, ya'ni tana qismi. 
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        </article>
+        <hr />
+        <article id="nishon">
+          <h2>Nishon joylashtirish</h2>
+          <p>
+            Nishon, ba'zan logo, yoki logotip deb nomlanuvchi grafik ko'rinishga
+            ega belgidir. Uni hamma joyda uchratish mumkin. html kodining head
+            qismida, link atributi yordamida nishonni aynan tab qismida
+            ko'rinadigan qilib sozlash mumkin. Quyidagi misolga qarang:
+          </p>
+          <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;link rel="icon" href="nishonbelgisi.png" 
+                        type="image/x-icon&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        Bu html ning body, ya'ni tana qismi. 
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+          <p>
+            &lt;link&gt; tegiga kursimizning keyingi bosqichida yana qaytamiz.
+          </p>
+        </article>
+        <hr />
+      </section>
+      <section id="uchinchisi">
+        <h1 class="mavzuNomi">
+          3-chi dars: <br />
+          Matnga ishlov berish
+        </h1>
+        <hr />
+        <h2>Sarlavalar</h2>
+        <p>
+          Vebsahifalar ko'pincha gazetaga o'xshab sarlavga va paragraflardan
+          iborat bo'ladi. Hajm jihatdan eng katta sarlavha &lt;h1&gt; va
+          &lt;/h1&gt; teglari o'rtasiga yoziladi.
+        </p>
+        <pre>
+          <code>
+              &lt;h1&gt; Sarlavha &lt;/h1&gt;
+          </code>
+      </pre>
+        <p>
+          Bundan tashqari &lt;h1&gt; dan kichirroq bo'lgan &lt;h2&gt;,
+          &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; sarlavhalari ham
+          mavjud:
+        </p>
+        <pre>
+          <code>
+              &lt;h1&gt; h1 Sarlavha &lt;/h1&gt;
+              &lt;h2&gt; h2 Sarlavha &lt;/h2&gt;
+              &lt;h3&gt; h3 Sarlavha &lt;/h3&gt;
+              &lt;h4&gt; h4 Sarlavha &lt;/h4&gt;
+              &lt;h5&gt; h5 Sarlavha &lt;/h5&gt;
+              &lt;h6&gt; h6 Sarlavha &lt;/h6&gt;
+          </code>
+      </pre>
+        <p>Har bir sahifada 1 dona h1 sarlavha ishlatish maslahat beriladi.</p>
+        <hr />
+        <h2>Paragraflar</h2>
+        <p>
+          Paragraflar matnni mazmun juhatdan qismlarga ajratish uchun
+          ishlatiladi. Paragraf &lt;p&gt; va &lt;/p&gt; teglari orasida
+          yoziladi. Quyida sarlavha va paragrafga misol keltiramiz.
+        </p>
+        <pre>
+          <code>
+              &lt;h1&gt; 
+                  O'zbekiston Respublikasining Konstitutsiyasi 2-chi moddasi 
+              &lt;/h1&gt;
+              &lt;p&gt; 
+                  Davlat xalq irodasini ifoda etib, uning manfaatlariga 
+                  xizmat qiladi. Davlat organlari va mansabdor shaxslar 
+                  jamiyat va fuqarolar oldida mas'uldirlar. 
+              &lt;/p&gt;
+          </code>
+      </pre>
+        <p>
+          Yuqoridagi kodni .html qo'shimchasi bilan saqlab browser bilan
+          ochganizda quyidagi ko'rinishga ega bo'ladi.
+        </p>
+        <img
+          src="h1p.png"
+          alt="h1 va p elementlaridan tashkil topgan oddiy vebsiahifa browser bilan ochilgan rasmi"
+        />
+        <p>
+          Quyida h1, h2 va p elementlarini qanday qilib qo'llashga misol
+          keltirilgan:
+        </p>
+        <pre>
+          <code>
+              &lt;h1&gt; 
+                  O'zbekiston Respublikasining Konstitutsiyasi
+              &lt;/h1&gt;
+              &lt;h2&gt; 
+                  2-chi modda
+              &lt;/h2&gt;
+              &lt;p&gt; 
+                  Davlat xalq irodasini ifoda etib, uning manfaatlariga 
+                  xizmat qiladi. Davlat organlari va mansabdor shaxslar 
+                  jamiyat va fuqarolar oldida mas'uldirlar. 
+              &lt;/p&gt;
+              &lt;h2&gt; 
+                  4-chi modda
+              &lt;/h2&gt;
+              &lt;p&gt; 
+                  O'zbekiston Respublikasining davlat tili o'zbek tilidir. 
+              &lt;/p&gt;
+          </code>
+      </pre>
+        <p>Yuqoridagi kod browserda quyidagicha ko'rinishga ega bo'ladi:</p>
+        <img
+          src="h1h2p.png"
+          alt="h1, h2 va p elementlaridan tashkil topgan oddiy vebsiahifaning browser bilan ochilgan rasmi"
+        />
+        <p>
+          E'tibor bergan bo'lsangiz, h1 tegi asosiy sarlavha uchun ishlatilgan,
+          h2 esa quyi darajadagi sarlavha uchun ishlatilgan. Matn esa p, ya'ni
+          paragraf elementi bilan o'ralgan.
+        </p>
+        <hr />
+        <h2>&lt;hr&gt; tegi</h2>
+        <p>
+          &lt;hr&gt; tegi matnni mazmuni jihatdan qismlarga ajratish uchun
+          ishlatiladi. &lt;hr&gt; tegi gorizontal chiziq ko'rinishida namoyon
+          bo'ladi. Quyida misolda yuqoridagi kodimizga ikkita gorizontal chiziq
+          qo'shamiz:
+        </p>
+        <pre>
+          <code>
+              &lt;h1&gt; 
+                  O'zbekiston Respublikasining Konstitutsiyasi
+              &lt;/h1&gt;
+              &lt;hr&gt;
+              &lt;h2&gt; 
+                  2-chi modda
+              &lt;/h2&gt;
+              &lt;p&gt; 
+                  Davlat xalq irodasini ifoda etib, uning manfaatlariga 
+                  xizmat qiladi. Davlat organlari va mansabdor shaxslar 
+                  jamiyat va fuqarolar oldida mas'uldirlar. 
+              &lt;/p&gt;
+              &lt;hr&gt;
+              &lt;h2&gt; 
+                  4-chi modda
+              &lt;/h2&gt;
+              &lt;p&gt; 
+                  O'zbekiston Respublikasining davlat tili o'zbek tilidir. 
+              &lt;/p&gt;
+          </code>
+      </pre>
+        <p>
+          Ushbu kodni browserda ochganimizda quyidagicha ko'rinishga ega bo'lgan
+          vebsahifa kelib chiqadi.
+        </p>
+        <img
+          src="h1h2hrp.png"
+          alt="h1, h2, hr va p elementlari ishlatilgan html kodi browserdagi ko'rinishi rasmi"
+        />
+        <p>Ko'rib turganingizdek ikkita gorizontal chiziq paydo bo'ldi.</p>
+        <p>
+          Bundan tashqari matnda ishlov berishda bo'sh qator qoldirib ketishga
+          to'g'ri keladi. Buning uchun &lt;br&gt; tegidan foydalaniladi.
+          &lt;br&gt; tegidan boshqa tegni ichida
+        </p>
+        <pre>
+          <code>
+              &lt;p&gt; 
+                  Matnning bir qismi yuqorida &lt;br&gt; ikkinchi qismi esa 
+                  pastga tushishi kerak. 
+              &lt;/p&gt;
+          </code>
+      </pre>
+        <img
+          src="pbr.png"
+          alt="matnning bir qismi br tegi yordamida keyingi qatorga tushirilgan"
+        />
+        <p>yoki tashqarida foydalanish mumkin.</p>
+        <pre>
+          <code>
+              &lt;p&gt; 
+                  Tasavvur qilaylik ushbu matn ma'lum bir sababga ko'ra 
+                  ikki qismga bo'lishi kerak. Matnning bir qismi 
+                  yuqorida
+              &lt;/p&gt;
+              &lt;br&gt;
+              &lt;p&gt;
+                  ikkinchi qismi esa pastga 
+                  tushishi kerak. 
+              &lt;/p&gt;
+          </code>
+      </pre>
+        <img
+          src="pbrp.png"
+          alt="br elementining ikkita p elementlari o'rtasida ishlatilishi browserda ko'rinishi"
+        />
+        <p>&lt;br&gt; tegi &lt;hr&gt; tegi kabi yopuvchi tegga ega emas.</p>
+        <hr />
+        <h2>&lt;em&gt; va &lt;strong&gt; teglari bilan matnga urg'u berish</h2>
+        <p>
+          matnga yoki matnning bit qismiga urg'u berish uchun uni &lt;em&gt; va
+          &lt;/em&gt; teglari orasi joylash kerak. Urg'u berilgan matn italik,
+          ya'ni kursiv ko'rinish oladi. Matnni yoki matnning bir qismini qalin
+          matnga aylantirish uchun esa uni &lt;strong&gt; va &lt;/strong&gt;
+          teglari orasiga o'rash kerak. Masalan:
+        </p>
+        <pre>
+          <code>
+              &lt;p&gt; 
+                  Dasturchilarga &lt;strong&gt; dunyo &lt;/strong&gt;bo'ylab talab katta. 
+                  Dasturchi bo'lish &lt;em&gt; qunt va mashaqqat &lt;/em&gt; talab 
+                  qiladi.
+              &lt;/p&gt;
+          </code>
+      </pre>
+        <img
+          src="strongem.png"
+          alt="strong va em teglari yordamida urg'u berilgan matn misol tariqasida browserda ko'rsatilgan"
+        />
+        <p>
+          Yuqorida misolda dunyo so'zi qalinlashgan, qunt va mashaqqat so'zlari
+          esa italik, ya'ni kursiv ko'rinishga ega. <br /><br />
+          &lt;strong&gt; tegi matnni muhimliligini belgilaydi va matnni
+          qalinlashtiradi. <br />
+          Agar faqatgina matnni qalinlashtirish kerak bo'lsa, uni &lt;b&gt; va
+          &lt;/b&gt; teglari orasiga olinishi kerak. <br />
+          em, strong va b elementlari qator-ichi elementlari hisoblanadi. Bu
+          nima degani? Qator ichi elementlari qator ichiga joylashadi va blok
+          elementlardan farqli ularoq yangi qatorga ko'chmaydi. Bu haqda keyingi
+          darslarda yana chuqurroq urganamiz.
+        </p>
+        <p>
+          Matnda boshida yoki ichida bir yoki bir nechta katak joy tashlab
+          ketish uchun &amp;nbsp; ishlatiladi.
+        </p>
+        <p>
+          html teglarini yozishda kichikroq &lt; va kattaroq &gt; belgilari
+          ishlatiladi. Ammo ushbu belgilar browserga teglarni matndan farqlay
+          olishi uchun ishlatiladi. Ammo kattaroq va kichikroq belgisini browser
+          ko'rsata oladigan qilish uchun quyidagi koddan foydalaniladi: <br />
+          &amp;lt; kichikroq, (&lt;) <br />
+          &amp;gt; kattaroq. (&gt;)
+        </p>
+        <p>
+          &lt;abbr&gt; tegi va title hossasi yordamida qisqartma so'zlarning
+          to'liq shaklini suzib chiquvchi oynada ko'rinadigan qilish mumkin.
+        </p>
+        <p>
+          &lt;address&gt; elementi yordamida vebsaytga manzil haqida ma'lumot
+          kiritiladi. Masalan siz restoran vebsaytini yaratmoqchi bo'lsangiz,
+          restoranning joylashgan manzilini &lt;address&gt; va &lt;/address&gt;
+          elementlari orasiga joylashtirish kerak bo'ladi.
+        </p>
+        <p>
+          HTML kodida izoh qoldirish uchun o'sha izohni &lt;!-- va --&gt;
+          belgilari orasida qoldirish kerak. Browser siz yozgan izohni
+          foydalanuvchiga ko'rsatmaydi, ammo, bu izoh siz uchun yoki siz bilan
+          birga ishlayotgan boshqa dasturchi uchun foydali bo'lishi mumkin.
+        </p>
+      </section>
+      <section id="tortinchisi">
+        <h1 class="mavzuNomi">4-chi dars: <br />HTML kodida izoh yozish.</h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#nima">Izoh nima va nimaga kerak?</a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="nima">
+          <p>
+            Izoh asosiy mavzuga oid qo'shimcha ma'lumot hisoblanadi. Ko'pchilik
+            ijtimoiy tarmoqlarda izoh qoldirgan va uning nimaligini biladi.
+            HTMlda izoh kod ichida yoziladi va u faqat dasturchilarga ko'rinadi.
+            HTML kodida izoh qoldirish uchun o'sha izohni &lt;!-- va --&gt;
+            belgilari orasida qoldirish kerak. Browser siz yozgan izohni
+            foydalanuvchiga ko'rsatmaydi, ammo, bu izoh siz uchun yoki siz bilan
+            birga ishlayotgan boshqa dasturchi uchun foydali bo'lishi mumkin.
+          </p>
+        </article>
+      </section>
+      <section id="beshinchisi">
+        <h1 class="mavzuNomi">
+          5-chi dars: <br />
+          Ro'yxatlar
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li><a href="#raqamlangan">Raqamlangan ro'yxat</a></li>
+            <li><a href="#raqamlanmagan">Raqamlanmagan ro'yxat</a></li>
+            <li><a href="#tavsifli">Tavsifli ro'yxat</a></li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="raqamlangan">
+          <h2>Raqamlangan ro'yxat</h2>
+          <p>Raqamlangan ro'yxat quyidagicha yoziladi:</p>
+          <pre>
+        <code>
+            &lt;p&gt;Kredit olish uchun kerak bo'lgan hujjatlar:&lt;/p&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Mahalladan ma'lumotnoma&lt;/li&gt;
+                &lt;li&gt;Ish joyidan ma'lumotnoma&lt;/li&gt;
+                &lt;li&gt;Nikoh guvohnomasi&lt;/li&gt;
+                &lt;li&gt;Soliqdan qarzi yo'qligi haqida hujjat&lt;/li&gt;
+                &lt;li&gt;Gazdan qarzi yo'qligi haqida hujjat&lt;/li&gt;
+                &lt;li&gt;Elektr energiyasidan qarzi yo'qligi haqida hujjat&lt;/li&gt;
+                &lt;li&gt;Oshnalardan qarzi yo'qligi haqida guvohnoma&lt;/li&gt;
+            &lt;/ol&gt;
+        </code>
+    </pre>
+        </article>
+        <hr />
+        <article id="raqamlanmagan">
+          <h2>Raqamlanmagan ro'yxat</h2>
+          <p>
+            Raqamlanmagan ro'yxatning moddalari, ya'ni qatorlari oldidan raqam
+            bo'lmaydi. Raqam o'rnida doira shakli ifodalanadi. Raqamlanmagan
+            ro'yxat xuddi raqamlangan ro'yxat kabi yoziladi, faqat &lt;ol&gt;
+            o'rniga &lt;ul&gt; yoziladi. Masalan:
+          </p>
+          <pre>
+        <code>
+            &lt;p&gt;Pishirig'imizga kerak bo'ladigan masalliqlar ro'yxati:&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;300 gram un &lt;/li&gt;
+                &lt;li&gt;200 gram suv&lt;/li&gt;
+                &lt;li&gt;1 dona tuxum&lt;/li&gt;
+                &lt;li&gt;Xamirturish&lt;/li&gt;
+                &lt;li&gt;Kartoshka 2 dona&lt;/li&gt;
+                &lt;li&gt;yog', yarim litr&lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+          <p>
+            Ko'rib turganingizdek raqamlangan va raqamlanmagan ro'yxatlar
+            avtomatik tarzda chap tarafdan joy qoldirgan holda yoziladi.
+          </p>
+        </article>
+        <hr />
+        <article id="tavsifli">
+          <h2>Tavsifli ro'yxat</h2>
+          <p>
+            Tavsifli ro'yxat ingliz tilida description list deyidi va u
+            &lt;dl&gt; tegi yordamida yoziladi. Misol tariqasida yuqorida
+            keltirilgan raqamlanmagan ro'yxatni tavsifli ro'yxatga aylantiramiz:
+          </p>
+          <pre>
+        <code>
+            &lt;p&gt;Pishirig'imizga kerak bo'ladigan masalliqlar ro'yxati:&lt;/p&gt;
+            &lt;dl&gt;
+                &lt;dt&gt;Oliy nav bug'doy uni&lt;/dt&gt;
+                &lt;dd&gt;300 gram &lt;/dd&gt;
+                &lt;dt&gt;Qaynatilib sovutilgan suv&lt;/dt&gt;
+                &lt;dd&gt;200 gram yoki 3 piyola &lt;/dd&gt;
+                &lt;dt&gt;Tovuq tuxumi&lt;/dt&gt;
+                &lt;dd&gt;1 dona katta yoki 2 ta kichik &lt;/dd&gt;
+                &lt;dt&gt;Quruq xamirturish&lt;/dt&gt;
+                &lt;dd&gt;5 gram yoki yarim choy qoshig'ida &lt;/dd&gt;
+                &lt;dt&gt;Kartoshka&lt;/dt&gt;
+                &lt;dd&gt;2 dona, o'rtacha&lt;/dd&gt;
+                &lt;dt&gt;O'simlik yog'i&lt;/dt&gt;
+                &lt;dd&gt;500 gram&lt;/dd&gt;
+            &lt;/dl&gt;
+        </code>
+    </pre>
+          <p>
+            Yuqoridagi misolda ko'rib turganingiz kabi tavsifli ro'yxatlar
+            qatorlar qo'shaloq &lt;dt&gt; va &lt;dd&gt; teglari bilan keladi.
+          </p>
+        </article>
+      </section>
+      <section id="oltinchisi">
+        <h1 class="mavzuNomi">
+          6-chi dars: <br />
+          Havolalar
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#mutlaqManzil">Mutlaq manzil (Absolute reference)</a>
+            </li>
+            <li>
+              <a href="#nisbiyManzil">Nisbiy manzil (Relative reference)</a>
+            </li>
+            <li>
+              <a href="#ichkiManzil">Ichki manzil (Internal reference)</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="mutlaqManzil">
+          <h2>Mutlaq manzil (Absolute reference)</h2>
+          <p>
+            HTML qisqartmasining birinchi ikkita harfi ingliz tilida hyper text
+            (HT) o'zbek tilida oshuvchi matn ya'ni havolani anglatadi.
+            Foydalanuvchini boshqa manzilga oshiradi, ya'ni o'tkazadi. Oddiy
+            matndan farqli ularoq, havolali matn ustiga sichqoncha
+            ko'rsatgichini keltirib chap tugmasini bosganimizda havola ishga
+            tushadi. Havola ko'pincha sizni boshqa vebsahifaga olib boradi, yoki
+            boshqa sahifani yangi oynada ochadi. Ushbu darsimizda havola
+            yaratishni urganamiz.
+            <br />
+            Havola &lt;a&gt; tegi yordamida yasaladi. Masalan siz
+            vebsahifangizda ijtimoiy tarmoqdagi sahifalaringizga havola
+            yasamoqchisiz. Bu quyidagicha yasaladi:
+          </p>
+          <pre>
+          <code>
+              &lt;p&gt;
+                  Bu mening
+                  &lt;a href="www.facebook.com/profilingizmoni"&gt;facebook&lt;/a&gt; 
+                  dagi sahifam:
+              &lt;/p&gt;
+          </code>
+      </pre>
+          <p>
+            Ushbu kodni browserda ochganimizda quyidagicha ko'rinishga ega
+            bo'ladi:
+          </p>
+          <img
+            src="a.png"
+            alt="HTML da ijtimoiy tarmoqqa tashqi havola yasash misol qilib keltirilgan browserdagi ko'rinishi"
+          />
+          <p>
+            Yuqoridagi misolda ko'rib turganingiz kabi havola rangi avtomatik
+            tarzda siyoh rangga o'zgardi. Bunga sabab browser havolali matnni
+            oddiy matndan ajralib turishini ta'minlaydi. <br />
+            Havola ustiga sichqoncha tugmasi bosilganda, browser havola rangini
+            ko'k rangga o'zgartiradi. Bu ham, foydalanuchilarga qulaylik
+            tug'dirish maqsadida, ya'ni tugma bosilgan havolalarni tugma
+            bosilmagan havolalardan ajralib turishini belgilaydi. Havola
+            ranglarini istalgan rangga o'zgartirish mumkin, ammo buni
+            kursimizning keyingi bosqichida, ya'ni css qismida urganamiz. <br />
+            Yuqorida kodda kiritilgan manzil to'liq manzil yoki mutlaq manzil
+            deyiladi.
+          </p>
+        </article>
+        <hr />
+        <article id="nisbiyManzil">
+          <h2>Nisbiy manzil (Relative reference)</h2>
+          <p>
+            Agar havolaga qilib bog'lanadigan fayl, vebsahifamiz fayli bilan bir
+            joyda joylashgan bo'lsa href hossasi quyidagicha yoziladi.
+          </p>
+          <pre>
+          <code>
+              &lt;p&gt;
+                  Ramsni ko'rish uchun
+                  &lt;a href="rasm.jpg"&gt;tugmani&lt;/a&gt; 
+                  bosing
+              &lt;/p&gt;
+          </code>
+      </pre>
+          <p>
+            Bu nisbiy manzil deyiladi, ingliz tilida relative reference
+            deyiladi, relativ referens deb o'qiladi. <br />
+            href hossasiga
+          </p>
+          <p>
+            Ikkita vebsahifangizni bir biriga havola orqali bog'lash uchun
+            quyidagicha ko'rinishda kod yozishingiz kerak:
+          </p>
+          <pre>
+          <code>
+              &lt;p&gt;
+                  Bizga murojot qilishni barcha yo'llarini ko'rish uchun
+                  &lt;a href="aloqa.html"&gt;aloq qismiga o'tish&lt;/a&gt; 
+                  ni maslahat berlamiz.
+              &lt;/p&gt;
+          </code>
+      </pre>
+          <p>
+            Agar aloqa.html fayli sizda hali mavjud bo'lmasa, unda index.html
+            joylashgan papkada yangi fayl yarating va uni haqida.html deb
+            nomlang. Siz endi haqida.html faylini mustaqil yarata olasiz va
+            buning uchun shu kungacha urgangan bilimlaringizdan foydalaning.
+          </p>
+        </article>
+        <hr />
+        <article id="ichkiManzil">
+          <h2>Ichki manzil (Internal reference)</h2>
+          <p>
+            Ichki manzil havolalari skrol turgmasini pastga tormasdan,
+            vebsahifaing istalgan qismiga tez yetib borish uchun qo'llaniladi.
+            Ichki manzil havolasini qo'llashdan oldin, ikkita html tegi bilan
+            tanishib chiqamiz. <br />
+            Birinchisi bu &lt;nav&gt; elementi. nav ingliz tilida navigation
+            degan so'zning qisqartmasidir. navigation navigeyshn deb o'qiladi va
+            o'zbek tilida yo'l-yo'riq degan ma'noni anglatadi. <br />
+            &lt;nav&gt; va &lt;/nav&gt; teglari ichida asosan menyu tugmalari
+            joylashtiriladi. <br />
+            Ikkinchi elementimiz bu &lt;article&gt; elementi. article so'zi
+            inglizcha bo'lib sekshn deb o'qiladi va o'zbek tilida ma'nosi bo'lim
+            yoki bob. <br />
+            &lt;article&gt; tegi vebsahifangizni bo'limlarga bo'lish uchun
+            ishlatiladi. Masalan:
+          </p>
+          <pre>
+          <code>
+              &lt;nav&gt;
+              &lt;/nav&gt;
+              &lt;article&gt; &lt;/article&gt;
+              &lt;article&gt; &lt;/article&gt;
+              &lt;article&gt; &lt;/article&gt;
+          </code>
+      </pre>
+          <p>
+            Yuqoridagi kodda 1 ta nav elementi va 3 ta article elementi yasaldi.
+            Endi nav elementi ichiga uchta banddan iborat raqamlanmagan ro'yxat
+            tayyorlaymiz va article elementiga id hosssini qo'shamiz. id hossasi
+            element boshqa ayni turdagi elementlardan ajralib turishi uchun
+            ishlatiladi va elementga alohida belgi beradi. Masalan:
+          </p>
+          <pre>
+          <code>
+              &lt;nav&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt; Men haqimda &lt;/li&gt;
+                      &lt;li&gt; Qilgan ishlarim &lt;/li&gt;
+                      &lt;li&gt; Men bilan bog'lanish &lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/nav&gt;
+              &lt;article id="menHaqimda"&gt; &lt;/article&gt;
+              &lt;article id="qilganIshlarim"&gt; &lt;/article&gt;
+              &lt;article id="boglanish"&gt; &lt;/article&gt;
+          </code>
+      </pre>
+          <p>
+            Endigi bosqichda har bir article elementni ma'lumotlar bilan
+            to'ldiramiz. Biz quyida misol tariqasida 2 qator matn qo'shamiz ammo
+            siz ekraningiz to'lguncha matn kiriting, shunki ushandagina siz
+            ichki manzil qanday ishlashini tushunib olasiz. <br />
+            So'ngra li elementlari ichidagi matnlarni a elementlari bilan
+            o'raymiz. a elementning href hossasini article elementining id
+            hossasi bilan bog'laymiz. Quyidagi misolga qarang.
+          </p>
+          <pre>
+          <code>
+              &lt;nav&gt;
+                  &lt;ul&gt;
+                  &lt;li&gt; 
+                      &lt;a href="#menHaqimda"&gt;Men haqimda&lt;/a&gt;  
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                      &lt;a href="#menHaqimda"&gt;Qilgan ishlarim&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                      &lt;a href="#menHaqimda"&gt;Men bilan bog'lanish&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/nav&gt;
+              &lt;article id="menHaqimda"&gt;
+                  Ushbu qismga o'zingiz haqingizda ma'lumot kiriting. 
+                  Yoki vebsahifangiz shirkat haqida bo'lsa shirkat 
+                  haqida ma'lumot kiriting. 
+              &lt;/article&gt;
+              &lt;article id="qilganIshlarim"&gt;
+                  Bu bi'limda erishgan yutuqlaringiz haqida ma'lumot 
+                  kiriting, yoki boshqa istalgan malumot kiriting. 
+                  Qanday ma'lumot kiritish siz yaratayotgan vebshifa 
+                  turiga bog'liq. 
+              &lt;/article&gt;
+              &lt;article id="boglanish"&gt;
+                  Bu bo'limda bog'lanish usullari ya'ni aloqaga
+                  chiqish yo'llari haqida ma'lumot kiriting, 
+                  masalan telefon raqami, email manzil va hokazolar. 
+              &lt;/article&gt;
+          </code>
+      </pre>
+          <p>
+            Agar vebsahifa so'ngida vebsahifa boshiga olib boruvchi ichki
+            manzilli havola yaratmoqchi bo'lsangiz, unda vebsahifa so'ngida
+            yaratilgan a elementining href hossasiga # (hashtag) belgisini
+            o'zini yozish kifoya.
+          </p>
+          <p>
+            Agar foydalanuvchi yuklab olishi kerak bo'lgan faylga havola
+            sozlamoqchi bo'lsangiz, unda a elementining ichida download
+            hossasini yozish kerak.
+          </p>
+          <p>
+            Agar foydalanuvchi havolaga bosganda telefon qilish uchun qo'shimcha
+            oyna ochilishini istasangiz, u quyidagicha yoziladi.
+          </p>
+          <pre>
+          <code>
+              &lt;p&gt; Qo'shimcha ma'lumot uchun bizga
+              &lt;a href="tel:+998123456789"&gt; qo'ng'iroq qiling  &lt;/a&gt;
+              &lt;/p&gt;
+          </code>
+      </pre>
+          <p>
+            Agar havola yangi oynada ochilishi kerak bo'lsa unda &lt;a&gt; tegi
+            ichida target hossasini _blank ko'rsatgichga belgilash kerak
+            bo'ladi.
+          </p>
+        </article>
+      </section>
+      <section id="yettinchisi">
+        <h1 class="mavzuNomi">
+          7-chi dars: <br />
+          Tasvirlar
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#imgTegi">&lt;img&gt; tegi va src hossasi</a>
+            </li>
+            <li>
+              <a href="#altTitle">alt va title hossalari</a>
+            </li>
+            <li>
+              <a href="#widthHeight">width va height hossalari</a>
+            </li>
+            <li>
+              <a href="#figure">&lt;figure&gt; va &lt;figcaption&gt; teglari</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="imgTegi">
+          <h2>&lt;img&gt; tegi va src hossasi</h2>
+          <p>
+            Shu vaqtgacha biz faqat matn bilan ishladik. HTMLda media fayllardan
+            ham foydalanish mumkin. Tasvirlar media fayllarning bir turi
+            hisoblanadi.
+          </p>
+          <p>
+            Tasvirlar <strong>img</strong> elementi yordamida vebsahifaga
+            joylashtiriladi. img elementi ingliz tilidagi image degan so'zning
+            qisqartirilgan shaklidir. Image, imej deb o'qiladi va uning o'zbek
+            tilida tarjimasi tasvir bo'ladi. <br />
+            img elementi faqat &lt;img&gt; tegi bilan yoziladi va yopuvchi tegga
+            ega emas. Ba'zan yopuvchi tegga ega bo'lmagan elementlarni
+            quyidagicha yozilganini ko'rishingiz mumkin. Masalan img elementi:
+            &lt;img/&gt; Buni ko'rib xaytron bo'lmang, ikkalasi ham to'g'ri
+            hisoblanadi. Lekin xozircha bunga chuqurlashib ketmaymiz. Shunchaki
+            bunday teglarni ko'rganda xayron bo'lmang degan maqsadda ochiqlik
+            kiritildi. <br />
+            Agar vebsahifangizda bitta emas bir nechta rasmlardan foydalanmoqchi
+            bo'lsangiz, ularni alohida papkaga joylashingizni maslahat beramiz.
+            Deylik papkani <em>tasvirlar</em> deb nomladingiz. Unda tasvirlarni
+            vebsahifangizga quyidagicha joylashingiz mumkin:
+          </p>
+          <pre>
+        <code>
+        &lt;p&gt;
+            Bizning eng so'nggi maxsulotimiz
+        &lt;/p&gt;
+        &lt;img src="tasvirlar/rasm.jpg"&gt;
+        </code>
+    </pre>
+          <p>
+            yuqoridagi misolda ko'rib turganigizdek, img elementini tasvirlar
+            papkangizdagi rasm.jpg fayli bilan bog'lash uchun
+            <strong>src</strong> hossasidan foylanildi. src ingliz tilida source
+            so'zining qisqargan shakli bo'lib o'zbek tilida manba degan ma'noni
+            anglatadi. source so'zi <em>sours </em> deb o'qiladi. <br />
+            Tasvir fayli mahalliy bo'lanligi uchun yuqoridagi misolda nisbiy
+            manzildan foydalanildi.
+          </p>
+        </article>
+        <hr />
+        <article id="altTitle">
+          <h2>alt va title hossalari</h2>
+          <p>
+            img elementining alt hossasiga matn biriktiriladi va ushbu matn
+            tasvir biron-bir sababga ko'ra ko'rinmaganda, tasvir o'rnida
+            ko'rinadi. alt hossasiga biriktiriladigan matn qo'shtirnoq ("") yoki
+            yakkatirnoq ('') ichida yoziladi va tenglik (=) belgisi bilan
+            biriktiriladi. Masalan:
+          </p>
+          <pre>
+<code>
+    &lt;p&gt;
+        Bu mening mushugim
+    &lt;/p&gt;
+    &lt;img src="tasvirlar/mushuk.jpg" alt="Mushuk rasmi"&gt;
+</code>
+</pre>
+          <p>
+            alt hossasiga biriktirilgan matnning yana bir foydali tarafi bor.
+            Ba'zida ko'rlar ekran o'quvchisidan foydalanishadi va vebsahifalarni
+            eshitishadi. Shunday hollarda browser avtomatik tarzda tasvir
+            o'rnida alt hossasiga biriktirilgan matnni o'qiydi.
+          </p>
+          <p>
+            title hossasi ham alt hossasi kabi yoziladi va unga matn
+            biriktiriladi. Biriktirilgan matn sichqoncha ko'rsatgichini rasm
+            ustiga olib borganda ekranga suzib chiqadi.
+            <code>title</code> hossasiga biriktilgan matnni ekran o'quvchisi
+            o'qimaydi. title hossasi tasvir haqida qo'shimcha ma'lumot beradi va
+            uni qo'llash ixtiyoriy hisoblanadi.
+          </p>
+        </article>
+        <hr />
+        <article id="widthHeight">
+          <h2>width va height hossalari.</h2>
+          <p>
+            img elementining width hossasi tasvirning enini, height hossasi esa
+            bo'yini belgilaydi. Agar ushbu hossalar belgilanmasa, browser
+            tasvirni asl o'lchamlarida ko'rsatadi. Agar ushbu hossalardan biri
+            belgilansa, unda browser ikkinchisini avtomatik tarzda o'zgartiradi
+            va bunda aspect ratio, ya'ni proporsiya saqlanib qoladi.
+          </p>
+        </article>
+        <hr />
+        <article id="figure">
+          <h2>&lt;figure&gt; va &lt;figcaption&gt; teglari</h2>
+          <p>
+            &lt;figure&gt; tegi img elementiga quti vazifasini bajaradi ya'ni
+            ochuvchi va yopuvchi teglar bilan img elementini o'raydi.
+            &lt;figcaption&gt; tegi esa img elementi bilan birga figure elementi
+            ichida joylashadi. figcaption elementi tasvirga sarlavha yozish
+            uchun ishlatiladi.
+          </p>
+        </article>
+      </section>
+      <section id="sakkizinchisi">
+        <h1 class="mavzuNomi">
+          7-chi dars: <br />
+          Semantik teglar
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#headerMainFooter">header, main va footer</a>
+            </li>
+            <li>
+              <a href="#sarlavha">Sarlavha qoidalari</a>
+            </li>
+            <li>
+              <a href="#navhrdiv">nav, hr va div elementlari</a>
+            </li>
+            <li>
+              <a href="#code">code, aside, details</a>
+            </li>
+            <li>
+              <a href="#mark">mark va time elementlari</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="headerMainFooter">
+          <h2>header, main va footer elementlari</h2>
+          <p>
+            html elementi ikki qismdan iborat; head va body <br />
+            head elementi ichida foydalanuvchilarga ko'rinmaydigan va sahifaga
+            bog'liq ma'lumotlar kiritiladi. body elementi ichiga vebsahifaning
+            asosit tarkibi kiritaladi. Quyida bunga misol keltirilgan.
+          </p>
+          <pre>
+        <code>
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;!-- Bu HTML ning head qismi, ya'ni miyyasi--&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;!--Bu HTML ning body qismi, ya'ni tanasi--&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+          <p>html ning body qismini 3 qismga quyidagicha bo'lish mumkin:</p>
+          <pre>
+        <code>
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;!-- Bu HTML ning head qismi, ya'ni miyyasi--&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;header&gt;
+                        &lt;!--Bu body elementining sarlavha qismi--&gt;
+                    &lt;/header&gt;
+                    &lt;main&gt;
+                        &lt;!--Bu body elementining asosiy qismi--&gt;
+                    &lt;/main&gt;
+                    &lt;footer&gt;
+                        &lt;!--Bu body elementining oyoq qismi--&gt;
+                    &lt;/footer&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+          <aside>
+            &lt;head&gt; tegini &lt;header&gt; tegi bilan adashtirib yubormang,
+            ular boshqa-boshqa teglar.
+          </aside>
+
+          <p>
+            Yuqorida kodda ko'rib turganingizdek, body elementi 3 ta qismga
+            bo'lindi. <br />
+            Birinchisi <code>header</code> elementi, sarlavha qismi hisoblanadi
+            va o'z ichiga menyudan tashkil topgan nav elementini, h1 elementini,
+            tamg'a belgisini (logo) va boshqalarni oladi. <br />
+            Ikkinchisi <code>main</code> elementi. main so'zi ingliz tilidan
+            olingan, meyn deb o'qiladi va o'zbek tilida asosiy degan ma'noni
+            anglatadi. main elementi vebsahifaning eng muhim va asosiy tarkibini
+            o'z ichiga oladi. main elementini article, div va/yoki article
+            elementlari bilan qismlarga bo'lish mumkin. <br />
+            Uchinchisi <code>footer</code> elementidir. Bu element o'z ichiga
+            mualliflik huquqi haqida ma'lumot, foydalanilgan manbalar va boshqa
+            ma'lumotlarni oladi. <br />
+            footer elementining vebsahifaning eng pastki qismida joylashadi.
+          </p>
+        </article>
+        <hr />
+        <article id="sarlavha">
+          <h2>Sarlavha qoidalari va pog'onalari.</h2>
+          <p>
+            Vebsahifa tarkibi tartibli bo'lishi kerak. HTML da vebsahifa
+            tarkibini tartibga solish uchun semantik teglardan foydalaniladi.
+            Oldingi darslarda semantik teglardan allaqachon foydalandik. Masalan
+            &lt;h1&gt; tegi, vebsahifa sarlavhasi uchun ishlatiladi.
+            Vebsahifaning har bir sahifasida faqat bir marta &lt;h1&gt; tegi
+            ishlatish qat'iy maslahat beriladi. Ko'pincha u sahifa boshida, eng
+            yuqorida, sarlavha ko'rinishida keladi. <br />
+            Agar sahifada birdan ortiq sarlavha bo'lsa, qolgan sarlavhalarni
+            &lt;h2&gt; tegi bilan yozishingiz mumkin. &lt;h2&gt; tegini sahifada
+            ko'p marta ishlatish mumkin. &lt;h2&gt; tegi &lt;h1&gt; tegidan
+            keyingi, pastgi pog'onada turadi. <br />
+            Agar &lt;h2&gt; tegin pastki pog'onada yana boshqa sarlavhalar
+            bo'lsa unda &lt;h3&gt; tegidan foydalaning. Quyidagi misolga diqqat
+            bilan etibor bering:
+          </p>
+
+          <pre>
+        <code>
+        &lt;h1&gt;
+            Oshxona Menyusi haqida
+        &lt;/h1&gt;
+        &lt;h2&gt;
+            Yeguliklar
+        &lt;/h2&gt;
+            &lt;h3&gt;Salatlar&lt;/h3&gt;
+                &lt;p&gt;Organiz sabzavotlardan tayyorlangan&lt;/p&gt;
+            &lt;h3&gt;Suyuq ovqatlar&lt;/h3&gt;
+                &lt;p&gt;Sho'rva va boshqa suyuq ovqatlar&lt;/p&gt;
+            &lt;h3&gt;Quyuq ovqatlar&lt;/h3&gt;
+                &lt;p&gt;Palov, qozon kabob va boshqalar&lt;/p&gt;
+        &lt;h2&gt;
+            Ichimliklar
+        &lt;/h2&gt;
+            &lt;h3&gt;Spirtli ichimliklar&lt;/h3&gt;
+                &lt;p&gt;Aroq, vino, pivo va turli xildagi kokteyl ichimliklari&lt;/p&gt;
+            &lt;h3&gt;Spirtsiz ichimliklar&lt;/h3&gt;
+                &lt;p&gt;Choy, qaxva mevali ichimliklar&lt;/p&gt;
+        &lt;h2&gt;
+            Chekiladiganlar
+        &lt;/h2&gt;
+            &lt;p&gt;Turli xildagi tamaki maxsulotlari va elektron sigaretlar&lt;/p&gt;
+        </code>
+    </pre>
+          <p>
+            Yuqoridagi misolda o'zingiz ko'rib turganingizdek, eng muhum
+            sarlavha h1 elementi bilan, muhimlik darajasi bo'yicha keyingi
+            pog'onada turuvchi sarlavhalar h2 va h3 elementlari bilan yozildi.
+            <br />
+            &lt;h4&gt;, &lt;h5&gt; va &lt;h6&gt; elementlari kamdan-kam
+            ishlatiladi.
+          </p>
+        </article>
+        <hr />
+        <article id="navhrdiv">
+          <h2>nav va hr elementlari</h2>
+          <p>
+            &lt;nav&gt; tegini ham oldingi darslarda qo'lladik. &lt;nav&gt; tegi
+            ham semantik teglar qatorida turadi, ya'ni vebsahifani mazmuniga
+            qarab tartiblash uchun yordam beradi. &lt;nav&gt; tegi havolalarni
+            bir guruhga o'rash uchun ishlatiladi. Masalan, vebsahifa boshida,
+            eng yuqori qismida, yoki chap tomonda joylashgan menyuni nav
+            elementi ichiga joylash mumkin. &lt;nav&gt; tegi ingliz tilida
+            navigation so'zidan olingan, va o'zbek tilida yo'l-yo'riq degan
+            ma'noni anglatadi. Bir vebsahifada bir nechta &lt;nav&gt; tegi
+            qo'llash mumkin.
+          </p>
+          <p>
+            &lt;hr&gt; elementi, vebsahifa tarkibini qismlarga bo'lish uchun
+            ishlatiladi. browser &lt;hr&gt; elementini gorozontal chiziq
+            ko'rinishida ko'rsatadi. Ushbu element ham semantik elementlar
+            safiga kiradi, chunki u vebsahifa tarkibida mavzu o'zgarishini
+            anglatadi.
+          </p>
+          <p>
+            &lt;div&gt; tegi ham &lt;article&gt;, &lt;article&gt;, &lt;nav&gt;
+            teglari kabi, vebsahifa tarkibini qismlarga ajratish uchun
+            ishlatiladi. &lt;div&gt; tegi hech qanday semantik ma'noga ega emas,
+            u shunchaki vebsahifa tarkibini tartibga solishda quti vazifasini
+            bajaradi. &lt;div&gt; tegini body elementining istalgan qismida
+            ishlatish mumkin. &lt;span&gt; ham divga o'xshab matnni bir qismini
+            o'rash uchun ishlatiladi. Ammo span elementining div elementidan
+            farqi span qator ichi elementi, div esa blok element hisoblanadi.
+            blok elementlar hajmidan qat'iy nazar butun qatorni egallaydi.
+          </p>
+        </article>
+        <hr />
+        <article id="code">
+          <h2>code, aside, details</h2>
+          <p>
+            Agar vebsahifangizda kompyuter kodi joylashtirmoqchi bo'lsangiz,
+            &lt;code&gt; tegidan foydalaning. &lt;code&gt; teglari bilan
+            o'ralgan matn boshqa matndan ajralib turadi, chunki &lt;code&gt;
+            tegiga <em>monospace</em> turidagi shrift oldindan biriktirilgan.
+          </p>
+          <p>
+            &lt;aside&gt; tegi ichida joylashadigan ma'lumot vebsahifada
+            keltirilgan mavzuga bog'liq ammo mavzular ket-ketligiga to'g'ri
+            kelmaydi va shu sabab qo'shimcha ma'lumot hisoblanadi. &lt;aside&gt;
+            tegi bilan o'ralgan matn vebsahifaning umumiy matnidan farq
+            qilmaydi. Matnni &lt;aside&gt; tegiga o'rashdan maqsad google va
+            shunga o'xshash boshqa qidiriv xizmatlari vebsahifangizni yaxshi
+            tushunib olishi.
+          </p>
+          <p>
+            &lt;details&gt; tegi agar bir ma'lumot tafsilotlarini yozish uchun
+            ishlatiladi. U &lt;summary&gt; tegi bilan birga quyidagicha
+            yoziladi:
+          </p>
+          <pre>
+        <code>
+        &lt;details&gt;
+            &lt;summary&gt;
+                Tizzausti kompyuterining hususiyatlari
+            &lt;/summary&gt;
+            &lt;p&gt;
+                Ekran diagonali 14 dyum, 
+                operativ xotirasi 16Gb, 
+                SSD xotirasi 512Gb, 
+                protsessor o'zaklar soni - 8,
+                protsessor tezligi - 2.3 megagerts, 
+                batareya hajmi 8000 mA. 
+            &lt;/p&gt;
+        &lt;/details&gt;
+        </code>
+    </pre>
+          <p>
+            Yuqoridagi kodning paragraf qismi browserda ko'rinmaydi, summary
+            elementining chap tomonida tugmacha hosil bo'ladi va ushbu tugmacha
+            bosilgandagina, paragraf elementi foydlanuvchiga ko'rinadi.
+          </p>
+          <figure>
+            <img
+              src="detailsyopiq.png"
+              alt="details elementi ichiga joylashgan summary elementi brauzer ko'rinishi"
+            />
+            <figcaption>
+              details elementini brauzerda yopiq holda ko'rinishi.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="detailsochiq.png"
+              alt="details elementi ichiga joylashgan summary elementi va p elementi brauzer ko'rinishi"
+            />
+            <figcaption>
+              details elementining ochilgandagi holati ko'rinishi.
+            </figcaption>
+          </figure>
+        </article>
+        <hr />
+        <article id="mark">
+          <h2>HTMLda mark va time elementlari</h2>
+          <p>
+            &lt;mark&gt; tegi matnni bir qismini yoritish uchun qo'llaniladi.
+            Quyida keltirilgan misolga qarang:
+          </p>
+          <pre>
+        <code>
+        &lt;p&gt;
+            O'zbekistonda transport vositalari yo'lning 
+            &lt;mark&gt; o'ng tarafidan &lt;/mark&gt; 
+            harakatlanadi. 
+        &lt;/p&gt;
+        </code>
+    </pre>
+          <figure>
+            <img
+              src="mark.png"
+              alt="details elementi ichiga joylashgan summary elementi va p elementi brauzer ko'rinishi"
+            />
+            <figcaption>
+              mark elementi matnni bir qismini yoritadi. Oldindan belgilangan
+              rang - sariq
+            </figcaption>
+          </figure>
+          <p>
+            html kodida vaqtni yozganda uni &lt;time&gt; va &lt;/time&gt;
+            teglari orasiga o'rash maslahat beriladi. Bu browserda ko'rinish
+            jihatidan hech qanday o'zgarish hosil qilmaydi lekin ko'makchi
+            texnologiyalar, masalan ekran o'quvchilari uchun juda foydali
+            hisoblanadi. Vaqtni umumiy matndan &lt;time&gt; tegi bilan ajratish,
+            ya'ni o'rab olish qidiruvchilarga qulaylik yaratadi.
+          </p>
+          <pre>
+        <code>
+        &lt;p&gt;
+            Ish vaqti ertalab &lt;time&gt; 8:30 &lt;/time&gt; dan kechki 
+            &lt;time&gt; 5:30 &lt;/time&gt; gacha
+        &lt;/p&gt; 
+        </code>
+    </pre>
+          <p>time elementi datetime hossasiga ega. Quyidagi misolga qarang:</p>
+          <pre>
+        <code>
+        &lt;p&gt;
+            Buyurtmalaringiz &lt;time datetime="2023-12-31"&gt; shu yil oxirigacha
+            &lt;/time&gt; yetkazib beriladi.  
+        &lt;/p&gt; 
+        </code>
+    </pre>
+        </article>
+      </section>
+      <section id="toqqizinchisi">
+        <h1 class="mavzuNomi">
+          8-chi dars: <br />
+          HTML da jadvallar yaratish
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#jadval">Jadval yaratish</a>
+            </li>
+            <li>
+              <a href="#o'lchamlar">Jadval o'lchamlari</a>
+            </li>
+            <li>
+              <a href="#colspan">colspan va rowspan hossalari</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="jadval">
+          <h2>HTMLda jadval yasash</h2>
+          <p>
+            HTMLda jadvallar dasturchilarga ma'lumotlarni qatorlar va ustunlarga
+            joylashtirish imkonini beradi. Quyida 3 ta qator va uchta ustundan
+            iborat oddiy jadval misol qilib keltirilgan.
+          </p>
+          <pre>
+        <code>
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Elektrli ulov&lt;/th&gt;
+                &lt;th&gt;Eng yuqori tezlik&lt;/th&gt;
+                &lt;th&gt;1 to'ldirishda bosib o'tish&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Maserati Gran Turismo&lt;/td&gt;
+                &lt;td&gt;320km/s&lt;/td&gt;
+                &lt;td&gt;425km&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Tesla Model S Plaid&lt;/td&gt;
+                &lt;td&gt;282km/s&lt;/td&gt;
+                &lt;td&gt;550km&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        </code>
+    </pre>
+          <table>
+            <tr>
+              <th>Elektrli ulov</th>
+              <th>Eng yuqori tezlik</th>
+              <th>1 to'ldirishda bosib o'tish</th>
+            </tr>
+            <tr>
+              <td>Maserati Gran Turismo</td>
+              <td>320km/s</td>
+              <td>425km</td>
+            </tr>
+            <tr>
+              <td>Tesla Model S Plaid</td>
+              <td>282km/s</td>
+              <td>550km</td>
+            </tr>
+          </table>
+          <p>
+            Yuqoridagi kod jadval yasaydi, ammo jadvalning chegara chiziqlari
+            bizga ko'rinmaydi. Jadvalning chegera chiziqlarini ko'rinadigan
+            qilish uchun bizga CSS kerak. Bu haqda kursimizning keyingi
+            bosqichida, ya'ni
+            <a href="/MarraUniversity/CSS/darsining/beshinchisi.html#jadval"
+              >CSS kusining jadval qismida</a
+            >
+            to'liq ma'lumot keltirilgan. <br />
+            Yuqorida keltirilgan misolda o'zingiz ko'rib turganingiz kabi HTML
+            da jadval yasash &lt;table&gt; tegi bilan boshlanib &lt;/table&gt;
+            tegi bilan tugaydi. &lt;table&gt; tegidagi table so'zi ingliz
+            tilidan olingan, teybl deb o'qiladi, va o'zbek tiliga jadval deb
+            tarjima qilinadi. <br />
+            Jadvallar faqat matn emas, har qanday turdagi tarkibni o'z ichiga
+            oladi. Masalan, jadval kataklari ichiga tasvirlar joylashtirish
+            mukin yoki boshqa jadval joylash mumkin.
+          </p>
+          <p>
+            Keyingi pog'onadagi teglar &lt;tr&gt; jadval qatorlari turadi.
+            Yuqoridagi misolda 3 ta tr elementi bor. tr ingliz tilidan table row
+            so'zining birinchi harflaridan yasalgan qisqartma bo'lib, o'zbek
+            tilida jadval qatori degan ma'noni anglatadi. <br />
+            Har bir tr elementining ichida th va td elementlari joylashgan. th
+            table header degan so'zdan olingan va jadval bosh katagini
+            belgilaydi. td esa table data so'zidan olingan va jadval katagini
+            belgilaydi.
+          </p>
+        </article>
+        <hr />
+        <article id="o'lchamlar">
+          <h2>Jadval o'lchamlari</h2>
+          <p>
+            HTML jadlvallari, ularning har bir ustuni va qatori belgilangan
+            o'lchamga ega bo'lishi mumkin. Agar jadval o'lchamlari belgilanmasa
+            jadval o'lchamlari uning ichidagi tarkibiga qarab moslashadi. Use
+            the style attribute with the width or height properties to specify
+            the size of a table, row or column. Buning uchun style hossasidan
+            foydalaniladi. style="width:" javdalning enini belgilash ushun
+            qo'llaniladi. style="height:" jadvalning bo'yi uchun ishlatiladi.
+            Quyidagi misolda yuqorida keltirilgan jadvalga en kiritamiz:
+          </p>
+          <pre>
+        <code>
+        &lt;table style="width:100%"&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Filiallarimiz&lt;/th&gt;
+                &lt;th&gt;Ma'sul xodim&lt;/th&gt;
+                &lt;th&gt;lavozimi&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Toshkent filiali&lt;/td&gt;
+                &lt;td&gt;Azamatov Baxodir&lt;/td&gt;
+                &lt;td&gt;bo'lim mudiri&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Farg'ona filiali&lt;/td&gt;
+                &lt;td&gt;Baxodirov Dilmurod&lt;/td&gt;
+                &lt;td&gt;filial boshqaruvchisi&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        </code>
+    </pre>
+          <p>
+            100% jadvalning eni ajdod element eniga nisbatan olinadi. Agar 50%
+            bo'lsa demak ajdod elementning yarim enini egallaydi. Ajdod element
+            bir darajadagi yuqori element hisoblanadi. Masalan, html elementi,
+            body va head elementlari uchun ajdod element hisoblanadi. body
+            elementi html elementining avlod elementi hisoblanadi.
+          </p>
+          <p>
+            Jadvalning ma'lum bit ustuni enini belgilash uchun o'sha ustun th
+            yoki td elementiga style hossasini kiriting. Masalan:
+          </p>
+          <pre>
+        <code>
+        &lt;table style="width:100%"&gt;
+            &lt;tr&gt;
+                &lt;th style="width:50%"&gt;Filiallarimiz&lt;/th&gt;
+                &lt;th&gt;Ma'sul xodim&lt;/th&gt;
+                &lt;th&gt;lavozimi&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Toshkent filiali&lt;/td&gt;
+                &lt;td&gt;Azamatov Baxodir&lt;/td&gt;
+                &lt;td&gt;bo'lim mudiri&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Farg'ona filiali&lt;/td&gt;
+                &lt;td&gt;Baxodirov Dilmurod&lt;/td&gt;
+                &lt;td&gt;filial boshqaruvchisi&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        </code>
+    </pre>
+          <p>
+            Jadvalning ma'lum bir qatorining bo'yini belgilash uchun style
+            elementini tr elementi ichida qo'llang:
+          </p>
+          <pre>
+        <code>
+        &lt;table style="width:100%"&gt;
+            &lt;tr style="height:120px"&gt;
+                &lt;th"&gt;Filiallarimiz&lt;/th&gt;
+                &lt;th&gt;Ma'sul xodim&lt;/th&gt;
+                &lt;th&gt;lavozimi&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Toshkent filiali&lt;/td&gt;
+                &lt;td&gt;Azamatov Baxodir&lt;/td&gt;
+                &lt;td&gt;bo'lim mudiri&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Farg'ona filiali&lt;/td&gt;
+                &lt;td&gt;Baxodirov Dilmurod&lt;/td&gt;
+                &lt;td&gt;filial boshqaruvchisi&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        </code>
+    </pre>
+          <p>
+            Etibor bergan bo'lsangiz, qator bo'yini foizda emas pikselda
+            belgiladik. Piksellar haqida ham kursimizning keyingi bosqichida
+            to'liqroq urganamiz.
+          </p>
+        </article>
+        <hr />
+        <article id="colspan">
+          <h2>colspan va rowspan hossalari</h2>
+          <p>
+            Ikkita yoki bir nechta yonma-yon turgan katakni bir-biriga
+            birlashtirish uchun colspan hossasi ishlatiladi.
+          </p>
+          <p>
+            Ikkita yoki bir nechta ustma-ust turgan kataklarni birlashtirish
+            uchun rowspan hossasi ishlatiladi.
+          </p>
+        </article>
+        <a href="yettinchisi.html">
+          <button>7-chi darsga qaytish</button>
+        </a>
+        <a href="/MarraUniversity/jadval.html">
+          <button>Dars Jadvali</button>
+        </a>
+        <a href="toqqizinchisi.html">
+          <button>9-chi darsga o'tish</button>
+        </a>
+      </section>
+      <section id="oninchisi">
+        <h1 class="mavzuNomi">
+          9-chi dars: <br />
+          HTML da shakllar va kiritishlar
+        </h1>
+        <hr />
+        <nav>
+          <h3>Mundarija:</h3>
+          <ul>
+            <li>
+              <a href="#shakl">Shakl va matn kiritish</a>
+            </li>
+            <li>
+              <a href="#radioTugmalar">Radio tugmalar</a>
+            </li>
+            <li>
+              <a href="#belgilash">Belgilash kataklari</a>
+            </li>
+            <li>
+              <a href="#topshirish">Topshirish tugmasi</a>
+            </li>
+            <li>
+              <a href="#buttonTugmasi">&lt;button&gt; elementi</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <article id="shakl">
+          <h2>Shakl va matn kiritish</h2>
+          <p>
+            HTML shakllar vebsahifangiz foydalanuvchilaridan ma'lumot olish
+            uchun ishlatiladi. Foydalanuvchilarning kiritganlari ko'pincha
+            serverga qayta ishlash uchun yuboriladi. <br />
+            HTML da shakllar bir nechta turdagi elementlar yordamida yasaladi.
+            ularning barchasi form elementi bilan o'raladi.
+          </p>
+          <pre>
+        <code>
+        &lt;form&gt;
+        ...
+        shakl elementlari.
+        ...
+        &lt;/form&gt;
+        </code>
+    </pre>
+          <p>
+            input elementi eng ko'p ishlatiladigan shakl elementlaridan biridir.
+            input elementining type hossasiga qanday ko'rsatgich belgilashga
+            qarab har xil maqsadda qo'llanilishi mumkin. Masalan matn
+            maydonchasi:
+          </p>
+          <pre>
+        <code>
+        &lt;form&gt;
+            &lt;input type="text"&gt; 
+        &lt;/form&gt;
+        </code>
+    </pre>
+          <p>
+            type="input" bir qatorli matn kiritish uchun mo'ljallangan. Agar
+            faqat yuqoridagi kodni o'zinigina kiritib vebbrauzerda ochsak, matn
+            yozsa bo'ladigan oddiy to'rtburchak paydo bo'ladi. Albatta matn
+            kiritish maydonchasiga nom berilishi kerak. Buning uchun
+            &lt;label&gt; tegi ishlatiladi. Label so'zi ingliz tilidan olingan,
+            leybl deb o'qiladi va o'zbek tiliga tarjimasi
+            <em> yorliq </em> bo'ladi.
+          </p>
+          <pre>
+        <code>
+        &lt;form&gt;
+            &lt;label for="ism"&gt; Ismingiz: &lt;/label&gt; &lt;br&gt;
+            &lt;input type="text" id="ism" name="ismi"&gt; &lt;br&gt;
+            &lt;label for="familya"&gt; Familyangiz: &lt;/label&gt; &lt;br&gt;
+            &lt;input type="text" id="fimilya" name="familya"&gt;
+        &lt;/form&gt;
+        </code>
+    </pre>
+          <p>Yuqoridagi kod quyidagicha ko'rinishga ega bo'ladi.</p>
+          <figure>
+            <img src="shakl1.png" alt="HTMLda matn kiritish shakliga misol." />
+            <figcaption>
+              Ushbu shalkda 2 ta input elementi, 2 ta label elementi
+              ishlatilgan. Bular form elementi bilan o'ralgan. Qatorlar orasiga
+              br elementi qo'yilgan.
+            </figcaption>
+          </figure>
+          <p>
+            Yuqoridagi misolda label elementi shakl elementiga nom berish uchun
+            ishlatilgan. label elementinig for hossasi input elementining id
+            hossasi bilan bir xil bo'lishi kerak. Shunda, ular bir-biriga
+            bog'lanadi.
+          </p>
+          <p>
+            Bundan tashqari input elementi ichida name hossasi kiritilgan. Bu
+            juda muhim hossa va bu hossani yozish shart, aks holda input
+            elementiga kiritilgan ma'lumot serverga yuborilmaydi. <br />
+            form elementining o'zi vebsahifada ko'rinmaydi va shakl
+            elementlariga o'ram (quti) vazifasini bajaradi.
+          </p>
+          <aside>
+            Hohishga ko'ra form elementini ko'rinadigan qilish mumkin, bu haqda
+            kursimizning keyingi bosqichida to'liqroq ma'lumot beramiz.
+          </aside>
+        </article>
+        <hr />
+        <article id="radioTugmalar">
+          <h2>Radio tugmalar</h2>
+          <p>
+            Radio tugmachalar &lt;input type="radio"&gt; tegi bilan yasaladi.
+            Radio tugmachalar foydalanuvchiga bir-qancha variantdan bittasini
+            tanlash imkonini beradi. <br />
+            Quyida radio tugmaga misol keltirilgan.
+          </p>
+          <pre>
+        <code>
+        &lt;p&gt; Quyosh qaysi tomondan chiqadi? &lt;/p&gt;
+        &lt;form&gt;
+            &lt;input type="radio" id="shimol" name="quyoshChiqishi" value="shimol"&gt;
+            &lt;label for="shimol"&gt; 
+            shimoldan 
+            &lt;/label&gt; &lt;br&gt;
+            &lt;input type="radio" id="janub" name="quyoshChiqishi" value="janub"&gt;
+            &lt;label for="janub"&gt; 
+            janubdan 
+            &lt;/label&gt; &lt;br&gt;
+            &lt;input type="radio" id="sharq" name="quyoshChiqishi" value="sharq"&gt;
+            &lt;label for="sharq"&gt; 
+            sharqdan
+            &lt;/label&gt; &lt;br&gt;
+            &lt;input type="radio" id="g'arb" name="quyoshChiqishi" value="g'arb"&gt;
+            &lt;label for="g'arb"&gt; 
+            g'arbdan  
+            &lt;/label&gt; &lt;br&gt;
+        &lt;/form&gt;
+        </code>
+    </pre>
+          <p>
+            Yuqorida keltirilgan kodda, e'tibor bergan bo'lsangiz, input
+            elementining name hossasiga bir xil ko'rsatgich berildi. Bunga
+            sabab, keltirilgan 4 ta radio tugmadan foydalanuvchi faqat
+            bittasinigina tanlay oladi xolos. <br />
+            type="radio" shakl elmenti aylana shaklda brauzerda ko'rinadi.
+            <br />
+            Etibor bering, input elementining id hossasi bilan label
+            elementining for hossasi bir xil. Shu yusinda label va input
+            bir-biriga bog'lanadi ya'ni label elementining ma'lum bir input
+            tugmasiga ta'luqli ekanligi belgilanadi.
+            <br />
+            Bundan tashqari, input elementiga value hossasi kiritilgan. Value
+            hossasiga nima kiritilsa o'sha ma'lumot serverga yuboriladi. <br />
+            Yuqoridagi kod, brauzerda quyidagicha ko'rinadi.
+          </p>
+          <figure>
+            <img
+              src="radiotugmalari.png"
+              alt="HTMLda yozilgan 4 ta variantdan iborat radio tugmachari misol tariqasida brauzerda ko'rinishi."
+            />
+            <figcaption>
+              4 ta variantdan iborat radio tugmali shakl elementi
+            </figcaption>
+          </figure>
+        </article>
+        <hr />
+        <article id="belgilash">
+          <h2>Belgilash kataklari</h2>
+          <p>
+            Belgilsh kataklari &lt;input type="checkbox"&gt; ko'rinishda
+            yoziladi. Belgilash kataklari berilgan variantlardan nol va undan
+            ortiq sondagi variantlari tanlash uchun ishlatiladi. Masalan:
+          </p>
+          <pre>
+    <code>
+        &lt;p&gt;
+            O'zbekiston fuqarolari qaysi ulkalarga vizasiz borishi mumkin? 
+        &lt;/p&gt;
+        &lt;form&gt;
+            &lt;input type="checkbox" id="Tailand" name="ulka1" value="Tailand"&gt;
+            &lt;label for="Tailand"&gt; Tailand &lt;/label&gt; &lt;br&gt;
+            &lt;input type="checkbox" id="Argentina" name="ulka2" value="Argentina"&gt;
+            &lt;label for="Argentina"&gt; Argentina &lt;/label&gt; &lt;br&gt;
+            &lt;input type="checkbox" id="Ukraina" name="ulka3" value="Ukraina"&gt;
+            &lt;label for="Ukraina"&gt; Ukraina &lt;/label&gt; &lt;br&gt;
+            &lt;input type="checkbox" id="Turkiya" name="ulka4" value="Turkiya"&gt;
+            &lt;label for="Turkiya"&gt; Turkiya &lt;/label&gt; &lt;br&gt;
+        &lt;/form&gt;
+    </code>
+    </pre>
+          <p>
+            E'tibor bergan bo'lsangiz yuqorida keltirilgan kodda name
+            hossalariga biriktirilgan ko'rsatgichlar har xil (ulka1, ulka2,
+            ulka3, ulka4) chunki kataklardan birini emas bir nechtasini
+            belgilash mumkin. <br />
+            Yuqoridagi kod brauzerda quyidagicha ko'rinishga ega bo'ladi.
+          </p>
+          <figure>
+            <img
+              src="belgilashkatagi.png"
+              alt="belgilash katagi keltirilgan misolning brauzerda ko'rinishi"
+            />
+            <figcaption>
+              &lt;input type="checkbox"&gt; to'rtburchak quti ko'rinishida
+              namoyon bo'ladi
+            </figcaption>
+          </figure>
+        </article>
+        <hr />
+        <article id="topshirish">
+          <h2>Topshirish tugmasi</h2>
+          <p>
+            Forma to'ldirgandan keyin topshiriladi, ya'ni serverga yuboriladi.
+            Shalkga kiritilgan ma'lumotlarni topshirish uchun topshirish tugmasi
+            &lt;input type="submit"&gt; bilan yasaladi. Topshirish tugmasi
+            ma'lumotlarni serverda joylashgan shakl hallovchiga (form-handler)
+            yuboradi. Lekin biz bunga chuqurlashmaymiz, chunki siz xozirda
+            tashqi (front-end) dasturchilikni urganmoqdasiz. Shakl hallovchilar
+            bilan ichki-tomon (back-end) dastruchilar chug'ullanadi. Topshirish
+            tugmasiga misol keltiramiz:
+          </p>
+          <pre>
+        <code>
+            &lt;p&gt; Ro'yxatdan o'tish &lt;/p&gt;
+            &lt;form action="/shaklHallovchi.php"&gt;
+            &lt;label for="ism"&gt; Ismingiz: &lt;/label&gt; &lt;br&gt;
+            &lt;input type="text" id="ism" name="foydalanuvchiismi"&gt; &lt;br&gt;
+            &lt;label for="familya"&gt; Familyangiz: &lt;/label&gt; &lt;br&gt;
+            &lt;input type="text" id="familya" name="foydalanuvchifamilyasi"&gt; &lt;br&gt;
+            &lt;input type="submit" value="Yuborish"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+          <p>
+            E'tibor bergan bo'lsangiz yuqoridagi kodda form elementi ichida
+            action hossasi qo'llanilgan. action hossasiga shakl-hallovchi
+            (form-handler) faylning nomi yoziladi. <br />
+            Yuqoridagi kod brauzerda quyidagicha namoyon bo'ladi.
+          </p>
+          <figure>
+            <img
+              src="topshirish.png"
+              alt="HTML da topshirish tugmasini yasashga misolning brauzerda ko'rinishi"
+            />
+            <figcaption>
+              Bosiladigan tugmaga "Yuborish" deb nom berilgan.
+            </figcaption>
+          </figure>
+          <p>
+            Yuborish tugmasi bosilganda foydalanuvchi kiritgan ma'lumotlar form
+            elementining action hossasida ko'rsatilgan faylga yuboriladi.
+          </p>
+        </article>
+        <hr />
+        <article id="buttonTugmasi">
+          <h2>&lt;button&gt; elementi</h2>
+          <p>
+            &lt;button&gt; tegi yordamida bosiladigan tugma yasash mumkin.
+            <br />
+            &lt;button&gt; elementi ichida matn yozish mumkin. Hatto &lt;i&gt;,
+            &lt;b&gt; &lt;strong&gt;, &lt;br&gt;, &lt;img&gt; kabi boshqa teglar
+            ham qo'llash mumkin. <br />
+            Buni &lt;input&gt; elementi bilan yasalgan tugmada qilib bo'lmaydi.
+            <br />
+            Esda tuting: Brauzer bu tugmaning qanday tugma ekanligini bilib
+            olishi uchun har doim type hossasi (atributi) yordamida tugmaning
+            turini belgilang. Masalan:
+          </p>
+          <pre>
+    <code>
+        &lt;button type="button"&gt;Bosiladigan tugma&lt;/button&gt;
+    </code>
+    </pre>
+          <p>
+            CSS yordamida tugmaga ishlov berib uni kerakli shaklga va
+            ko'rinishga keltirish mumkin.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
