@@ -15,10 +15,10 @@
   </head>
   <body>
     <header class="mainMenu">
-      <ul>
-        <li><a href="/MarraUniversity/index.html">Uyga</a></li>
-      </ul>
-      <details>
+      <h3>
+        <a href="/MarraUniversity/index.html">Uyga</a>
+      </h3>
+      <details onclick="closeOtherMenus('menu1')">
         <summary>
           <h3>HTML darslar jadvali</h3>
         </summary>
@@ -75,7 +75,7 @@
           </li>
         </ol>
       </details>
-      <details>
+      <details onclick="closeOtherMenus('menu2')">
         <summary class="jadvalBoshMenyusi">
           <h3>CSS darslar jadvali</h3>
         </summary>
@@ -130,7 +130,7 @@
           </li>
         </ol>
       </details>
-      <details>
+      <details onclick="closeOtherMenus('menu3')">
         <summary>
           <h3>JavaScript</h3>
         </summary>
@@ -163,6 +163,19 @@
           <li>
             <a href="/MarraUniversity/JavaScript/js.html#oltinchisi"
               >Malumot turlari
+            </a>
+          </li>
+          <li>
+            <a href="/MarraUniversity/JavaScript/js.html#yettinchisi"
+              >if else va switch
+            </a>
+          </li>
+          <li>
+            <a href="/MarraUniversity/JavaScript/js.html#sakkizinchi">Loop </a>
+          </li>
+          <li>
+            <a href="/MarraUniversity/JavaScript/js.html#toqqizinchi"
+              >Function
             </a>
           </li>
         </ol>
@@ -777,42 +790,89 @@
           <p>Nimaga aynan Visual Studio Code deyisizmi?</p>
           <ol>
             <li>
-              stackoverflow.co platformasi so'rovnomasiga ko'ra Visual Studio
+              stackoverflow.com platformasi so'rovnomasiga ko'ra Visual Studio
               Code dasturchilar tomonidan ishlatiladigan eng ko'p ishlatilgan.
               <figure>
-                <img src="/MarraUniversity/html/2022IDEstats.png" alt="Integrated Development Environment stats for 2022"/>
+                <img
+                  src="/MarraUniversity/html/2022IDEstats.png"
+                  alt="Integrated Development Environment stats for 2022"
+                />
               </figure>
             </li>
-            <li>VS Code uchala operatsion tizimda ham mavjud. (Windows, macOS, Linux)</li>
+            <li>
+              VS Code uchala operatsion tizimda ham mavjud. (Windows, macOS,
+              Linux)
+            </li>
             <li>Juda ham ko'p dasturlash tillariga moslashgan.</li>
             <li>Juda tez ishlaydi va kam hotira egallaydi.</li>
           </ol>
-          <p>Agar sizni ko'ndira olgan bo'lsak endi Visual Studio Code ni o'rnatishni boshlaymiz.</p>
+          <p>
+            Agar sizni ko'ndira olgan bo'lsak endi Visual Studio Code ni
+            o'rnatishni boshlaymiz.
+          </p>
           <ol>
-            <li><a href="https://code.visualstudio.com/download">visualstudio.com </a>  saytiga kirib dasturni yuklab olamiz.</li>
+            <li>
+              <a href="https://code.visualstudio.com/download"
+                >visualstudio.com
+              </a>
+              saytiga kirib dasturni yuklab olamiz.
+            </li>
             <li>Yuklab olingan dasturni kompyuterga o'rnatamiz.</li>
           </ol>
         </article>
         <hr />
         <article id="liveServer">
           <h3>Live server qo'shimchasi</h3>
-          <p>VS Code qo'shimchalar mavjud. Ingliz tilida extention deyiladi. <i>ekstenshn deb o'qiladi</i>. Extenshnlar soni 30 000 dan oshadi. Shunday extenshnlardan biri live server deyiladi. U bizga kerak bo'ladi. Kodni har safar yangilaganingizda uni saqlab keyin faylni brauzerda ochish shart emas. Live server hammasini o'zi bajaradi. Siz faqat VS Code da kod yozasiz, brauzeringiz ochiq turadi, kod o'zgarganda brauzer oynasiga o'tish kifoya. Live Serverni o'rnatish uchun: </p>
+          <p>
+            VS Code qo'shimchalar mavjud. Ingliz tilida extention deyiladi.
+            <i>ekstenshn deb o'qiladi</i>. Extenshnlar soni 30 000 dan oshadi.
+            Shunday extenshnlardan biri live server deyiladi. U bizga kerak
+            bo'ladi. Kodni har safar yangilaganingizda uni saqlab keyin faylni
+            brauzerda ochish shart emas. Live server hammasini o'zi bajaradi.
+            Siz faqat VS Code da kod yozasiz, brauzeringiz ochiq turadi, kod
+            o'zgarganda brauzer oynasiga o'tish kifoya. Live Serverni o'rnatish
+            uchun:
+          </p>
           <ol>
-            <li>VS Code ni oching va chap tomonda asosiy menyudan qo'shimchalar menyusini tanlab oling.</li>
-            <li>Qidiruv bo'limiga 'live server' yozing va qidirish tugmasini bosing.</li>
+            <li>
+              VS Code ni oching va chap tomonda asosiy menyudan qo'shimchalar
+              menyusini tanlab oling.
+            </li>
+            <li>
+              Qidiruv bo'limiga 'live server' yozing va qidirish tugmasini
+              bosing.
+            </li>
             <li>Natijalardan keraklisini tanglang va uni ustiga bosing.</li>
             <li>Yangi ochilgan oynada 'install' tugmasini bosing.</li>
-            <li>O'rnatilgandan keyin live server avtomatik ishga tushadi. Pastki panelda live server belgisi paydo bo'ladi. Agar live server biror sababga ko'ra yoqilmagan bo'lsa uchbu belgi ustiga bosib uni yoqing.</li>
+            <li>
+              O'rnatilgandan keyin live server avtomatik ishga tushadi. Pastki
+              panelda live server belgisi paydo bo'ladi. Agar live server biror
+              sababga ko'ra yoqilmagan bo'lsa uchbu belgi ustiga bosib uni
+              yoqing.
+            </li>
           </ol>
         </article>
         <hr />
         <article id="prettier">
           <h3>Prettier qo'shimchasi</h3>
-          <p>Prettier qo'shimchasi (ekstenshn) kodingizni estetik tomondan ko'rinishini yaxshilaydi, tekislaydi, bo'shliq qo'shadi, ortiqcha keraksiz bo'shliqni o'chiradi, Abzats tashlaydi yoki o'chiradi, va keyingi qatorga o'tkazadi. Xullas, kodingizni ko'rinish jihotdan go'zal xolatga keltiradi. Aytgancha 'prettier' so'zi ingliz tilidan o'zbek tiliga 'chiroyliroq' deb tarjima qilinadi. <i>(pretie deb o'qiladi)</i> Prettier ham xuddi live server kabi o'rnatiladi. </p>
+          <p>
+            Prettier qo'shimchasi (ekstenshn) kodingizni estetik tomondan
+            ko'rinishini yaxshilaydi, tekislaydi, bo'shliq qo'shadi, ortiqcha
+            keraksiz bo'shliqni o'chiradi, Abzats tashlaydi yoki o'chiradi, va
+            keyingi qatorga o'tkazadi. Xullas, kodingizni ko'rinish jihotdan
+            go'zal xolatga keltiradi. Aytgancha 'prettier' so'zi ingliz tilidan
+            o'zbek tiliga 'chiroyliroq' deb tarjima qilinadi.
+            <i>(pretie deb o'qiladi)</i> Prettier ham xuddi live server kabi
+            o'rnatiladi.
+          </p>
           <ol>
             <li>VS Code extentions menyusi ochiladi</li>
-            <li>Qidiruvga 'prettier' deb yoziladi va qidiruv tugmasi bosiladi.</li>
-            <li>Qidiruv natijalaridan 'prettier' ni topib uni ustiga bosiladi.</li>
+            <li>
+              Qidiruvga 'prettier' deb yoziladi va qidiruv tugmasi bosiladi.
+            </li>
+            <li>
+              Qidiruv natijalaridan 'prettier' ni topib uni ustiga bosiladi.
+            </li>
             <li>Yangi oynada 'install' tugmasi bosiladi.</li>
           </ol>
         </article>
@@ -2054,5 +2114,17 @@
         facilis!
       </p>
     </footer>
+    <script>
+      function closeOtherMenus(clickedMenuId) {
+        const allMenus = document.getElementsByTagName("details");
+        for (let i = 0; i < allMenus.length; i++) {
+          const menu = allMenus[i];
+          const menuId = menu.id;
+          if (menuId !== clickedMenuId) {
+            menu.removeAttribute("open");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
