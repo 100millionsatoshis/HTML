@@ -12,15 +12,28 @@
     <title>HTML da shakllar va kiritishlar</title>
     <link rel="icon" href="logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="/MarraUniversity/common.css" />
+    <script
+      src="https://kit.fontawesome.com/20919a33da.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="mainMenu">
-      <h3>
-        <a href="/MarraUniversity/index.html">Uyga</a>
-      </h3>
-      <details onclick="closeOtherMenus('menu1')">
+      <a href="/MarraUniversity/index.html">
+        <div class="logoAndBrendName">
+          <img
+              class="logosmall"
+              src="/MarraUniversity/media/logosmalltransparent.svg"
+              alt="logo"
+          />
+          <span>MARRA <br>
+            UNIVERSITY</span>
+        </div>
+      </a>
+      <details open onclick="closeOtherMenus('menu1')">
         <summary>
-          <h3>HTML darslar jadvali</h3>
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML</span>
         </summary>
         <ol>
           <li>
@@ -77,7 +90,8 @@
       </details>
       <details onclick="closeOtherMenus('menu2')">
         <summary class="jadvalBoshMenyusi">
-          <h3>CSS darslar jadvali</h3>
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS</span>
         </summary>
         <ol>
           <li>
@@ -121,7 +135,7 @@
             </a>
           </li>
           <li>
-            <a href="/MarraUniversity/CSS/darsining.html#toqqzinchisi">
+            <a href="/MarraUniversity/CSS/darsining.html#toqqizinchisi">
               Flexbox
             </a>
           </li>
@@ -132,7 +146,8 @@
       </details>
       <details onclick="closeOtherMenus('menu3')">
         <summary>
-          <h3>JavaScript</h3>
+          <i class="fa-brands fa-square-js"></i>
+          <span>JavaScript</span>
         </summary>
         <ol>
           <li>
@@ -187,6 +202,7 @@
           1-chi dars: <br />
           HTML bilan tanishuv
         </h1>
+        
         <hr />
         <nav>
           <h3>Mundarija:</h3>
@@ -1561,6 +1577,23 @@
               details elementining ochilgandagi holati ko'rinishi.
             </figcaption>
           </figure>
+          <p>Vebsahifa birinchi marta ochilganda details yopiq turgan bo'ladi. Uni ochib keyin sahifa yangilansa (refresh) details yana yopilib qoladi. Agar sizga details ochiq turishi kerak bo'lsa unga 'open' hossasini qo'shing. Masalan:</p>
+<pre>
+<code>
+  &lt;details open&gt;
+    &lt;summary&gt;
+      menyu
+    &lt;/summary&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Choy&lt;/li&gt;
+      &lt;li&gt;Osh&lt;/li&gt;
+      &lt;li&gt;Non&lt;/li&gt;
+      &lt;li&gt;Salat&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/details&gt;
+</code><span class="tilNomi">HTML</span>
+</pre>
+          <p>Ushbu kodni qanday ishlashini tekshirib ko'ring hamda 'open' hossasi bo'lmagan details elementi bilan farqini tushunib oling.</p>
         </article>
         <hr />
         <article id="mark">
